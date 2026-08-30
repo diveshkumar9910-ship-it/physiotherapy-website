@@ -3761,3 +3761,420 @@ footer {
     }
 
 }
+
+
+/* =====================================================
+   PREMIUM AXIOM-INSPIRED TYPOGRAPHY SYSTEM
+   ===================================================== */
+
+:root {
+
+    --font-main:
+        "DM Sans",
+        sans-serif;
+
+    --font-display:
+        "DM Sans",
+        sans-serif;
+
+    --font-serif:
+        "Playfair Display",
+        Georgia,
+        serif;
+
+    --font-mono:
+        "DM Mono",
+        monospace;
+
+}
+
+
+/* =========================
+   GLOBAL
+   ========================= */
+
+html,
+body {
+
+    font-family: var(--font-main);
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+}
+
+
+body {
+
+    letter-spacing: -0.01em;
+
+}
+
+
+/* =========================
+   ALL HEADINGS
+   ========================= */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+
+    font-family: var(--font-display);
+
+    font-weight: 500;
+
+    letter-spacing: -0.045em;
+
+    line-height: .95;
+
+}
+
+
+/* =========================
+   MAIN HERO HEADING
+   ========================= */
+
+.hero h1 {
+
+    font-family: var(--font-display);
+
+    font-size: clamp(
+        58px,
+        8vw,
+        125px
+    );
+
+    font-weight: 500;
+
+    line-height: .88;
+
+    letter-spacing: -0.065em;
+
+}
+
+
+/* =========================
+   EDITORIAL / ITALIC WORDS
+   ========================= */
+
+h1 em,
+h2 em,
+h3 em,
+.hero em,
+.section-title em {
+
+    font-family: var(--font-serif);
+
+    font-style: italic;
+
+    font-weight: 400;
+
+    letter-spacing: -0.035em;
+
+}
+
+
+/* =========================
+   SECTION HEADINGS
+   ========================= */
+
+.section-title {
+
+    font-size: clamp(
+        42px,
+        6vw,
+        82px
+    );
+
+    font-weight: 500;
+
+    line-height: .94;
+
+    letter-spacing: -0.055em;
+
+}
+
+
+/* =========================
+   LARGE HEADINGS
+   ========================= */
+
+.display-title {
+
+    font-size: clamp(
+        50px,
+        7vw,
+        100px
+    );
+
+    font-weight: 500;
+
+    line-height: .9;
+
+    letter-spacing: -0.06em;
+
+}
+
+
+/* =========================
+   BODY CONTENT
+   ========================= */
+
+p {
+
+    font-family: var(--font-main);
+
+    font-size: 15px;
+
+    line-height: 1.7;
+
+    font-weight: 400;
+
+    letter-spacing: -0.01em;
+
+}
+
+
+/* =========================
+   SMALL DESCRIPTION
+   ========================= */
+
+.small-text {
+
+    font-size: 13px;
+
+    line-height: 1.65;
+
+    color:
+        rgba(255,255,255,.62);
+
+}
+
+
+/* =========================
+   KICKER / LABEL
+   ========================= */
+
+.kicker,
+.card-kicker,
+.section-kicker {
+
+    font-family: var(--font-mono);
+
+    font-size: 10px;
+
+    font-weight: 400;
+
+    letter-spacing: .18em;
+
+    text-transform: uppercase;
+
+}
+
+
+/* =========================
+   NAVIGATION
+   ========================= */
+
+.main-nav,
+.nav-link {
+
+    font-family: var(--font-main);
+
+}
+
+
+.nav-link {
+
+    font-size: 13px;
+
+    font-weight: 500;
+
+    letter-spacing: -0.01em;
+
+}
+
+
+/* =========================
+   BUTTONS
+   ========================= */
+
+button,
+.btn,
+.header-book-btn,
+.form-submit {
+
+    font-family: var(--font-main);
+
+    font-weight: 600;
+
+    letter-spacing: -0.015em;
+
+}
+
+
+/* =========================
+   BUTTON SMALL TEXT
+   ========================= */
+
+.header-whatsapp {
+
+    font-family: var(--font-mono);
+
+    font-size: 10px;
+
+    letter-spacing: .08em;
+
+    text-transform: uppercase;
+
+}
+
+
+/* =========================
+   NUMBERS
+   ========================= */
+
+.number,
+.stat-number,
+.counter,
+.booking-info span {
+
+    font-family: var(--font-mono);
+
+}
+
+
+/* =========================
+   CARDS
+   ========================= */
+
+.card h3 {
+
+    font-family: var(--font-display);
+
+    font-size: 27px;
+
+    font-weight: 500;
+
+    line-height: 1;
+
+    letter-spacing: -0.04em;
+
+}
+
+
+/* =========================
+   FORMS
+   ========================= */
+
+input,
+select,
+textarea {
+
+    font-family: var(--font-main);
+
+    font-size: 14px;
+
+}
+
+
+label {
+
+    font-family: var(--font-main);
+
+    font-weight: 500;
+
+}
+
+
+/* =========================
+   QUOTE / TESTIMONIAL
+   ========================= */
+
+blockquote {
+
+    font-family: var(--font-serif);
+
+    font-size: clamp(
+        28px,
+        4vw,
+        54px
+    );
+
+    font-weight: 400;
+
+    font-style: italic;
+
+    line-height: 1.05;
+
+    letter-spacing: -0.035em;
+
+}
+
+
+/* =========================
+   FOOTER
+   ========================= */
+
+footer {
+
+    font-family: var(--font-main);
+
+}
+
+
+footer .footer-label {
+
+    font-family: var(--font-mono);
+
+    font-size: 10px;
+
+    letter-spacing: .16em;
+
+    text-transform: uppercase;
+
+}
+
+
+/* =========================
+   MOBILE TYPOGRAPHY
+   ========================= */
+
+@media (max-width: 768px) {
+
+    .hero h1 {
+
+        font-size: clamp(
+            48px,
+            15vw,
+            78px
+        );
+
+        letter-spacing: -0.06em;
+
+    }
+
+
+    .section-title {
+
+        font-size: clamp(
+            40px,
+            12vw,
+            60px
+        );
+
+    }
+
+
+    p {
+
+        font-size: 14px;
+
+        line-height: 1.65;
+
+    }
+
+}
