@@ -888,3 +888,78 @@ document.addEventListener("DOMContentLoaded", () => {
     );
 
 });
+
+
+
+/* ==================================================
+   HEADER JAVASCRIPT
+   ================================================== */
+
+const mobileMenuBtn =
+    document.getElementById("mobileMenuBtn");
+
+const mainNav =
+    document.getElementById("mainNav");
+
+
+/* MOBILE MENU */
+
+mobileMenuBtn.addEventListener("click", () => {
+
+    mainNav.classList.toggle("mobile-open");
+
+});
+
+
+/* CLOSE MOBILE MENU AFTER CLICK */
+
+document.querySelectorAll(".nav-link").forEach(link => {
+
+    link.addEventListener("click", () => {
+
+        mainNav.classList.remove("mobile-open");
+
+    });
+
+});
+
+
+/* SCROLL HEADER */
+
+window.addEventListener("scroll", () => {
+
+    const header =
+        document.querySelector(".site-header");
+
+    if (window.scrollY > 30) {
+
+        header.classList.add("scrolled");
+
+    } else {
+
+        header.classList.remove("scrolled");
+
+    }
+
+});
+
+
+/* ACTIVE NAV */
+
+document.querySelectorAll(".nav-link").forEach(link => {
+
+    link.addEventListener("click", function () {
+
+        document
+            .querySelectorAll(".nav-link")
+            .forEach(item => {
+
+                item.classList.remove("active");
+
+            });
+
+        this.classList.add("active");
+
+    });
+
+});
