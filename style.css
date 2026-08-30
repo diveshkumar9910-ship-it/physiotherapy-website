@@ -190,6 +190,635 @@ button {
     opacity: 1;
 }
 
+/* ==================================================
+   AXIOM STYLE PREMIUM HEADER
+   ================================================== */
+
+.brand {
+    pointer-events: auto;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.brand-logo {
+    width: 190px;
+    height: auto;
+    max-height: 58px;
+    object-fit: contain;
+    display: block;
+}
+.site-header {
+
+    position: fixed;
+
+    top: 18px;
+    left: 0;
+    right: 0;
+
+    z-index: 9000;
+
+    height: 72px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 0 34px;
+
+    pointer-events: none;
+
+}
+
+
+/* ==================================================
+   BRAND
+   ================================================== */
+
+.brand {
+
+    pointer-events: auto;
+
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
+
+    color: #fff;
+
+    text-decoration: none;
+
+    min-width: 280px;
+
+}
+
+
+.brand-mark {
+
+    width: 42px;
+    height: 42px;
+
+    border: 1px solid rgba(255,255,255,.28);
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 12px;
+
+    letter-spacing: 1px;
+
+    color: #ff6b18;
+
+    background:
+        rgba(255,255,255,.025);
+
+}
+
+
+.brand-text {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 3px;
+
+}
+
+
+.brand-text strong {
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    letter-spacing: .4px;
+
+}
+
+
+.brand-text span {
+
+    font-size: 8px;
+
+    letter-spacing: 2.4px;
+
+    color:
+        rgba(255,255,255,.45);
+
+}
+
+
+/* ==================================================
+   CENTER NAV
+   ================================================== */
+
+.main-nav {
+
+    pointer-events: auto;
+
+    position: absolute;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    height: 62px;
+
+    padding: 0 12px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 2px;
+
+    background:
+        rgba(20,20,22,.72);
+
+    border:
+        1px solid rgba(255,255,255,.12);
+
+    border-radius: 100px;
+
+    backdrop-filter: blur(18px);
+
+    -webkit-backdrop-filter: blur(18px);
+
+    box-shadow:
+        0 10px 40px rgba(0,0,0,.18);
+
+}
+
+
+.nav-link {
+
+    position: relative;
+
+    height: 46px;
+
+    min-width: 82px;
+
+    padding: 0 17px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    color:
+        rgba(255,255,255,.53);
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    font-weight: 500;
+
+    border-radius: 100px;
+
+    transition:
+        color .3s ease,
+        background .3s ease;
+
+}
+
+
+.nav-link:hover {
+
+    color: #fff;
+
+}
+
+
+.nav-link.active {
+
+    color: #fff;
+
+}
+
+
+.nav-link i {
+
+    position: absolute;
+
+    width: 4px;
+    height: 4px;
+
+    border-radius: 50%;
+
+    background: #ff6815;
+
+    bottom: 7px;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    opacity: 0;
+
+    transition: .3s ease;
+
+}
+
+
+.nav-link.active i {
+
+    opacity: 1;
+
+}
+
+
+/* ==================================================
+   RIGHT ACTIONS
+   ================================================== */
+
+.header-actions {
+
+    margin-left: auto;
+
+    pointer-events: auto;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+}
+
+
+/* BOOK BUTTON */
+
+.header-book-btn {
+
+    height: 54px;
+
+    padding: 0 24px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+
+    color: #fff;
+
+    background:
+        rgba(20,20,22,.58);
+
+    border:
+        1px solid rgba(255,255,255,.16);
+
+    border-radius: 100px;
+
+    cursor: pointer;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    backdrop-filter: blur(15px);
+
+    -webkit-backdrop-filter: blur(15px);
+
+    transition:
+        background .3s ease,
+        border .3s ease,
+        transform .3s ease;
+
+}
+
+
+.header-book-btn b {
+
+    font-size: 18px;
+
+    font-weight: 400;
+
+    transition: transform .3s ease;
+
+}
+
+
+.header-book-btn:hover {
+
+    background: #ff6815;
+
+    border-color: #ff6815;
+
+    transform: translateY(-1px);
+
+}
+
+
+.header-book-btn:hover b {
+
+    transform: translate(3px,-3px);
+
+}
+
+
+/* ==================================================
+   WHATSAPP
+   ================================================== */
+
+.header-whatsapp {
+
+    height: 54px;
+
+    padding: 0 19px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    color:
+        rgba(255,255,255,.75);
+
+    text-decoration: none;
+
+    font-size: 12px;
+
+    border:
+        1px solid rgba(255,255,255,.1);
+
+    border-radius: 100px;
+
+    background:
+        rgba(20,20,20,.45);
+
+    backdrop-filter: blur(14px);
+
+    transition: .3s ease;
+
+}
+
+
+.header-whatsapp:hover {
+
+    color: #fff;
+
+    border-color:
+        rgba(255,255,255,.25);
+
+}
+
+
+.whatsapp-dot {
+
+    width: 6px;
+    height: 6px;
+
+    border-radius: 50%;
+
+    background: #32c875;
+
+    box-shadow:
+        0 0 10px rgba(50,200,117,.55);
+
+}
+
+
+/* ==================================================
+   MOBILE BUTTON
+   ================================================== */
+
+.mobile-menu-btn {
+
+    display: none;
+
+    pointer-events: auto;
+
+    width: 50px;
+    height: 50px;
+
+    margin-left: auto;
+
+    border:
+        1px solid rgba(255,255,255,.15);
+
+    background:
+        rgba(20,20,20,.7);
+
+    border-radius: 50%;
+
+    align-items: center;
+    justify-content: center;
+
+    flex-direction: column;
+
+    gap: 6px;
+
+    cursor: pointer;
+
+}
+
+
+.mobile-menu-btn span {
+
+    width: 18px;
+    height: 1px;
+
+    background: #fff;
+
+}
+
+
+/* ==================================================
+   SCROLL EFFECT
+   ================================================== */
+
+.site-header.scrolled {
+
+    top: 10px;
+
+}
+
+
+.site-header.scrolled .main-nav {
+
+    background:
+        rgba(12,12,13,.88);
+
+    border-color:
+        rgba(255,255,255,.16);
+
+}
+
+
+/* ==================================================
+   MOBILE
+   ================================================== */
+
+@media (max-width: 1050px) {
+
+    .site-header {
+
+        padding: 0 20px;
+
+    }
+
+
+    .brand {
+
+        min-width: auto;
+
+    }
+
+
+    .brand-text strong {
+
+        font-size: 11px;
+
+    }
+
+
+    .brand-text span {
+
+        font-size: 7px;
+
+    }
+
+
+    .main-nav {
+
+        gap: 0;
+
+    }
+
+
+    .nav-link {
+
+        min-width: auto;
+
+        padding: 0 12px;
+
+    }
+
+
+    .header-whatsapp {
+
+        display: none;
+
+    }
+
+}
+
+
+@media (max-width: 780px) {
+
+    .site-header {
+
+        top: 12px;
+
+        height: 60px;
+
+        padding: 0 15px;
+
+    }
+
+
+    .main-nav {
+
+        position: fixed;
+
+        top: 82px;
+
+        left: 15px;
+        right: 15px;
+
+        transform:
+            translateY(-20px);
+
+        height: auto;
+
+        padding: 12px;
+
+        border-radius: 24px;
+
+        display: flex;
+
+        flex-direction: column;
+
+        align-items: stretch;
+
+        opacity: 0;
+
+        visibility: hidden;
+
+        transition:
+            opacity .3s ease,
+            transform .3s ease;
+
+    }
+
+
+    .main-nav.mobile-open {
+
+        opacity: 1;
+
+        visibility: visible;
+
+        transform:
+            translateY(0);
+
+    }
+
+
+    .nav-link {
+
+        height: 48px;
+
+        justify-content: flex-start;
+
+        padding: 0 18px;
+
+    }
+
+
+    .nav-link i {
+
+        left: auto;
+
+        right: 18px;
+
+        bottom: auto;
+
+        top: 50%;
+
+        transform:
+            translateY(-50%);
+
+    }
+
+
+    .header-actions {
+
+        display: none;
+
+    }
+
+
+    .mobile-menu-btn {
+
+        display: flex;
+
+    }
+
+
+    .brand-mark {
+
+        width: 38px;
+        height: 38px;
+
+    }
+
+}
+
 
 /* ================= HEADER ================= */
 
