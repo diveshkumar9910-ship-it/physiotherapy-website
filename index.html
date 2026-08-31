@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
 
     <meta name="viewport"
@@ -11,93 +13,142 @@
 
     <title>Dr. Sanjeev Pal | Physiotherapy & Rehabilitation</title>
 
- <!-- PREMIUM TYPOGRAPHY -->
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- =====================================================
+         GOOGLE FONTS
+         ===================================================== -->
 
-<link
-    href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&display=swap"
-    rel="stylesheet"
->
-    <!-- Main CSS -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap"
+          rel="stylesheet">
+
+
+    <!-- =====================================================
+         MAIN CSS
+         ===================================================== -->
+
+    <link rel="stylesheet"
+          href="style.css">
+
 </head>
+
 
 <body>
 
-   <!-- ================= HEADER ================= -->
 
-<header class="site-header">
+<!-- =========================================================
+     HEADER
+     ========================================================= -->
 
-    <!-- LEFT BRAND -->
-<a href="#home" class="brand">
+<header class="site-header"
+        id="header">
 
-    <img
-        src="assets/sanjeevpal.png"
-        alt="Dr. Sanjeev Pal Physiotherapy"
-        class="brand-logo"
-    >
 
-</a>
-        <div class="logo-fallback">
-            <strong>DR. SANJEEV PAL</strong>
-            <span>PHYSIOTHERAPY</span>
-        </div>
+    <!-- LOGO -->
+
+    <a href="#home"
+       class="brand"
+       aria-label="Dr. Sanjeev Pal Physiotherapy">
+
+        <img src="assets/sanjeevpal.png"
+             alt="Dr. Sanjeev Pal Physiotherapy"
+             class="brand-logo">
 
     </a>
 
 
-    <!-- CENTER NAVIGATION -->
 
-    <nav class="main-nav" id="mainNav">
+    <!-- NAVIGATION -->
 
-        <a href="#home" class="nav-link active">
+    <nav class="main-nav"
+         id="mainNav"
+         aria-label="Primary navigation">
+
+
+        <a href="#home"
+           class="nav-link active">
+
             <span>Home</span>
+
             <i></i>
+
         </a>
 
-        <a href="#services" class="nav-link">
-            <span>Services</span>
-            <i></i>
-        </a>
 
-        <a href="#about" class="nav-link">
+        <a href="#about"
+           class="nav-link">
+
             <span>About</span>
+
             <i></i>
+
         </a>
 
-        <a href="#contact" class="nav-link">
-            <span>Contact</span>
+
+        <a href="#services"
+           class="nav-link">
+
+            <span>Services</span>
+
             <i></i>
+
         </a>
+
+
+        <a href="#reviews"
+           class="nav-link">
+
+            <span>Reviews</span>
+
+            <i></i>
+
+        </a>
+
+
+        <a href="#contact"
+           class="nav-link">
+
+            <span>Contact</span>
+
+            <i></i>
+
+        </a>
+
 
     </nav>
 
 
-    <!-- RIGHT ACTIONS -->
+
+    <!-- HEADER ACTIONS -->
 
     <div class="header-actions">
 
-        <button
-            class="header-book-btn"
-            id="openBooking"
-            type="button"
-        >
 
-            <span>Book Appointment</span>
+        <button class="header-book-btn book-appointment-btn"
+                id="openBooking"
+                type="button">
 
-            <b>↗</b>
+            <span>
+                Book Appointment
+            </span>
+
+            <b>
+                ↗
+            </b>
 
         </button>
 
 
-        <a
-            href="https://wa.me/"
-            class="header-whatsapp"
-            target="_blank"
-            aria-label="WhatsApp"
-        >
+        <a href="https://wa.me/919716477008"
+           class="header-whatsapp"
+           target="_blank"
+           rel="noopener noreferrer">
 
             <span class="whatsapp-dot"></span>
 
@@ -105,121 +156,1654 @@
 
         </a>
 
+
     </div>
+
 
 
     <!-- MOBILE MENU -->
 
-    <button
-        class="mobile-menu-btn"
-        id="mobileMenuBtn"
-        type="button"
-        aria-label="Open menu"
-    >
+    <button class="mobile-menu-btn"
+            id="mobileMenuBtn"
+            type="button"
+            aria-label="Open menu"
+            aria-expanded="false">
 
         <span></span>
+
         <span></span>
 
     </button>
 
+
 </header>
-    
-
-    <!-- ================= MAIN ================= -->
-
-    <main id="home">
 
 
-        <!-- ================= HERO ================= -->
 
-        <section class=" axiom-section">
+<!-- =========================================================
+     MAIN
+     ========================================================= -->
 
-            <div class="hero-copy reveal">
-
-                <div class="index-label">
-                    SYSTEM / 01 — PHYSIOTHERAPY
-                </div>
+<main>
 
 
-                <h1>
+<!-- =========================================================
+     HERO
+     ========================================================= -->
 
-                    <span>Destination</span>
-
-                    For
-
-                    <br>
-
-                    Relief & Wellness
-
-                </h1>
+<section class="hero axiom-section"
+         id="home">
 
 
-                <p>
-
-                    At our center, we believe in the power of healing
-                    and well-being. With expert care and personalized
-                    treatments, we provide relief from pain, stress,
-                    and discomfort.
-
-                    Whether in our clinic or home visits, experience
-                    a rejuvenating journey that nurtures your mind,
-                    body, and spirit—tailored specifically for you.
-
-                </p>
-
-                <div class="hero-actions">
-
-                    <a class="pill primary"
-                       href="#services">
-
-                        Explore Services
-
-                        <span>↗</span>
-
-                    </a>
+    <div class="hero-inner">
 
 
-                    <a class="pill secondary"
-                       href="#book">
+        <!-- HERO CONTENT -->
 
-                        Book Appointment
-
-                        <span>↗</span>
-
-                    </a>
-
-                </div>
+        <div class="hero-copy">
 
 
-                <div class="hero-stats">
+            <div class="index-label">
+                PHYSIOTHERAPY / 01
+            </div>
 
-                    <div>
-                        <strong>24/7</strong>
-                        <span>On-demand Care</span>
-                    </div>
 
-                    <div>
-                        <strong>10+</strong>
-                        <span>Therapists</span>
-                    </div>
+            <h1>
 
-                    <div>
-                        <strong>1000+</strong>
-                        <span>Patients</span>
-                    </div>
+                Move Better.
 
-                </div>
+                <br>
+
+                <em>Live</em> Better.
+
+            </h1>
+
+
+            <p>
+
+                Evidence-based physiotherapy and
+                rehabilitation designed around your
+                recovery, mobility and long-term wellbeing.
+
+            </p>
+
+
+
+            <!-- BUTTONS -->
+
+            <div class="hero-actions">
+
+
+                <a href="#book"
+                   class="pill primary book-appointment-btn">
+
+                    Book Appointment
+
+                    <span>↗</span>
+
+                </a>
+
+
+                <a href="#services"
+                   class="pill secondary">
+
+                    Explore Services
+
+                    <span>↗</span>
+
+                </a>
+
 
             </div>
 
 
 
-            <!-- BOOKING 
+            <!-- STATS -->
 
-            <div class="booking-card reveal"
-                 id="book">
+            <div class="hero-stats">
 
-                <div class="card-kicker">
+
+                <div>
+
+                    <strong>
+                        23+
+                    </strong>
+
+                    <span>
+                        Years Experience
+                    </span>
+
+                </div>
+
+
+                <div>
+
+                    <strong>
+                        5K+
+                    </strong>
+
+                    <span>
+                        Patients Guided
+                    </span>
+
+                </div>
+
+
+                <div>
+
+                    <strong>
+                        4.9
+                    </strong>
+
+                    <span>
+                        Patient Rating
+                    </span>
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+
+        <!-- HERO VISUAL -->
+
+        <div class="hero-visual">
+
+
+            <div class="hero-image-wrap">
+
+                <img src="assets/sanjeev-2.jpeg"
+                     alt="Dr. Sanjeev Pal Physiotherapy">
+
+            </div>
+
+
+            <div class="hero-card">
+
+                <span>
+                    SPECIALIST
+                </span>
+
+                <strong>
+                    Neuro Physiotherapy
+                </strong>
+
+                <p>
+                    Pain • Paralysis • Rehabilitation
+                </p>
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+</section>
+
+
+
+<!-- =========================================================
+     ABOUT
+     ========================================================= -->
+
+<section class="about axiom-section"
+         id="about">
+
+
+    <div class="section-container">
+
+
+        <div class="about-copy">
+
+
+            <div class="index-label">
+                ABOUT / 02
+            </div>
+
+
+            <h2>
+
+                Recovery that
+
+                <br>
+
+                feels
+
+                <em>
+                    personal.
+                </em>
+
+            </h2>
+
+
+            <p>
+
+                Dr. Sanjeev Pal Yadav is a qualified
+                physiotherapist specialising in neuro
+                physiotherapy, pain management and
+                rehabilitation.
+
+            </p>
+
+
+            <p>
+
+                Every treatment plan is designed according
+                to the patient's condition, lifestyle,
+                mobility and recovery goals.
+
+            </p>
+
+
+            <div class="profile-line">
+
+
+                <span>
+                    BPT
+                </span>
+
+
+                <span>
+                    Neuro Physiotherapy
+                </span>
+
+
+                <span>
+                    Pain Management
+                </span>
+
+
+                <span>
+                    Rehabilitation
+                </span>
+
+
+            </div>
+
+
+        </div>
+
+
+
+        <div class="about-image">
+
+
+            <img src="assets/sanjeevpal.jpeg"
+                 alt="Dr. Sanjeev Pal">
+
+
+            <div class="image-caption">
+
+                <span>
+                    DR. SANJEEV PAL
+                </span>
+
+                <strong>
+                    Physiotherapist
+                </strong>
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+</section>
+
+
+
+<!-- =========================================================
+     BRANCHES
+     ========================================================= -->
+
+<section class="branches dark-section"
+         id="branches">
+
+
+    <div class="section-container">
+
+
+        <div class="section-heading">
+
+
+            <div class="index-label">
+                LOCATIONS / 03
+            </div>
+
+
+            <h2>
+
+                Physiotherapy
+
+                <br>
+
+                <em>near you.</em>
+
+            </h2>
+
+
+            <p>
+
+                Convenient physiotherapy services
+                across our nearby clinic locations.
+
+            </p>
+
+
+        </div>
+
+
+
+        <div class="branch-grid">
+
+
+            <article>
+
+                <span>
+                    01
+                </span>
+
+                <h3>
+                    Punjabi Bagh
+                </h3>
+
+                <p>
+                    Physiotherapy clinic and
+                    rehabilitation services.
+                </p>
+
+                <b>
+                    View Location
+                    <i>↗</i>
+                </b>
+
+            </article>
+
+
+            <article>
+
+                <span>
+                    02
+                </span>
+
+                <h3>
+                    Naraina
+                </h3>
+
+                <p>
+                    Personalised physiotherapy
+                    and pain management.
+                </p>
+
+                <b>
+                    View Location
+                    <i>↗</i>
+                </b>
+
+            </article>
+
+
+            <article>
+
+                <span>
+                    03
+                </span>
+
+                <h3>
+                    Inder Puri
+                </h3>
+
+                <p>
+                    Rehabilitation and
+                    mobility-focused treatment.
+                </p>
+
+                <b>
+                    View Location
+                    <i>↗</i>
+                </b>
+
+            </article>
+
+
+        </div>
+
+
+    </div>
+
+
+</section>
+
+
+
+<!-- =========================================================
+     HOME VISIT
+     ========================================================= -->
+
+<section class="homevisit axiom-section">
+
+
+    <div class="section-container homevisit-grid">
+
+
+        <div>
+
+
+            <div class="index-label">
+                HOME VISIT / 04
+            </div>
+
+
+            <h2>
+
+                Expert care,
+
+                <br>
+
+                <em>at home.</em>
+
+            </h2>
+
+
+        </div>
+
+
+
+        <div>
+
+
+            <p>
+
+                Recover comfortably with professional
+                physiotherapy at your home. Home visits
+                are designed for patients who require
+                convenient, personalised rehabilitation.
+
+            </p>
+
+
+            <a href="#book"
+               class="pill primary"
+               data-open-booking>
+
+                Request Home Visit
+
+                <span>
+                    ↗
+                </span>
+
+            </a>
+
+
+        </div>
+
+
+    </div>
+
+
+</section>
+
+
+
+<!-- =========================================================
+     SERVICES
+     ========================================================= -->
+
+<section class="services axiom-section"
+         id="services">
+
+
+    <div class="section-container">
+
+
+        <div class="center-head">
+
+
+            <div class="index-label">
+                SERVICES / 05
+            </div>
+
+
+            <h2>
+
+                Treatment built
+
+                <em>
+                    around you.
+                </em>
+
+            </h2>
+
+
+            <p>
+
+                Comprehensive physiotherapy services
+                for pain relief, recovery and improved mobility.
+
+            </p>
+
+
+        </div>
+
+
+
+        <div class="service-grid">
+
+
+            <!-- SERVICE 01 -->
+
+            <article>
+
+
+                <div class="service-image">
+
+                    <img src="assets/Manual Therapy.png"
+                         alt="Manual Therapy">
+
+                </div>
+
+
+                <span>
+                    01
+                </span>
+
+
+                <h3>
+                    Manual Therapy
+                </h3>
+
+
+                <p>
+
+                    Hands-on techniques designed to
+                    improve movement, reduce discomfort
+                    and restore functional mobility.
+
+                </p>
+
+
+                <a href="#book"
+                   data-open-booking>
+
+                    Explore
+
+                    <i>
+                        ↗
+                    </i>
+
+                </a>
+
+
+            </article>
+
+
+
+            <!-- SERVICE 02 -->
+
+            <article>
+
+
+                <div class="service-image">
+
+                    <img src="assets/Chronic Pain.png"
+                         alt="Chronic Pain Management">
+
+                </div>
+
+
+                <span>
+                    02
+                </span>
+
+
+                <h3>
+                    Chronic Pain
+                </h3>
+
+
+                <p>
+
+                    Individualised treatment strategies
+                    for long-term pain and movement
+                    limitations.
+
+                </p>
+
+
+                <a href="#book"
+                   data-open-booking>
+
+                    Explore
+
+                    <i>
+                        ↗
+                    </i>
+
+                </a>
+
+
+            </article>
+
+
+
+            <!-- SERVICE 03 -->
+
+            <article>
+
+
+                <div class="service-image">
+
+                    <img src="assets/Hand Therapy.png"
+                         alt="Hand Therapy">
+
+                </div>
+
+
+                <span>
+                    03
+                </span>
+
+
+                <h3>
+                    Hand Therapy
+                </h3>
+
+
+                <p>
+
+                    Rehabilitation focused on improving
+                    hand strength, flexibility and function.
+
+                </p>
+
+
+                <a href="#book"
+                   data-open-booking>
+
+                    Explore
+
+                    <i>
+                        ↗
+                    </i>
+
+                </a>
+
+
+            </article>
+
+
+
+            <!-- SERVICE 04 -->
+
+            <article>
+
+
+                <div class="service-image">
+
+                    <img src="assets/Sports Therapy.png"
+                         alt="Sports Therapy">
+
+                </div>
+
+
+                <span>
+                    04
+                </span>
+
+
+                <h3>
+                    Sports Therapy
+                </h3>
+
+
+                <p>
+
+                    Structured rehabilitation for sports
+                    injuries, performance and safe return
+                    to activity.
+
+                </p>
+
+
+                <a href="#book"
+                   data-open-booking>
+
+                    Explore
+
+                    <i>
+                        ↗
+                    </i>
+
+                </a>
+
+
+            </article>
+
+
+
+            <!-- SERVICE 05 -->
+
+            <article>
+
+
+                <div class="service-image">
+
+                    <img src="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWnD_EyvBpo5CYBJSG6g9xMUIMOvvZa4THGmLQ-q0Ab5xNereq1B8rPeYiB_SUYJRkkvR-bYMeqeSeBTzbFwyRb3sNXDArHi9S6IUg96wjm1KJJmgAcTT_XrcDsC-Y00R1WyP7etpJNVWsLE=w204-h204-n-k-no-nu"
+                         alt="Neck Pain">
+
+                </div>
+
+
+                <span>
+                    05
+                </span>
+
+
+                <h3>
+                    Neck Pain
+                </h3>
+
+
+                <p>
+
+                    Complementary therapy used alongside
+                    physiotherapy where appropriate.
+
+                </p>
+
+
+                <a href="#book"
+                   data-open-booking>
+
+                    Explore
+
+                    <i>
+                        ↗
+                    </i>
+
+                </a>
+
+
+            </article>
+
+
+
+            <!-- SERVICE 06 -->
+
+            <article>
+
+
+                <div class="service-image">
+
+                    <img src="assets/Laser Therapy.png"
+                         alt="Laser Therapy">
+
+                </div>
+
+
+                <span>
+                    06
+                </span>
+
+
+                <h3>
+                    Laser Therapy
+                </h3>
+
+
+                <p>
+
+                    Modern therapeutic technology integrated
+                    into appropriate rehabilitation plans.
+
+                </p>
+
+
+                <a href="#book"
+                   data-open-booking>
+
+                    Explore
+
+                    <i>
+                        ↗
+                    </i>
+
+                </a>
+
+
+            </article>
+
+
+        </div>
+
+
+    </div>
+
+
+</section>
+
+
+
+<!-- =========================================================
+     QUALITY
+     ========================================================= -->
+
+<section class="quality axiom-section">
+
+
+    <div class="section-container quality-grid">
+
+
+        <div class="quality-copy">
+
+
+            <div class="index-label">
+                EXPERIENCE / 06
+            </div>
+
+
+            <h2>
+
+                Quality
+
+                <br>
+
+                physiotherapy
+
+                <br>
+
+                <em>service.</em>
+
+            </h2>
+
+
+            <p>
+
+                Our approach combines clinical experience,
+                personalised attention and progressive
+                rehabilitation.
+
+            </p>
+
+
+        </div>
+
+
+
+        <div class="quality-content">
+
+
+            <div class="metric-row">
+
+                <strong>
+                    23+
+                </strong>
+
+                <span>
+                    Years of professional experience
+                </span>
+
+            </div>
+
+
+            <div class="metric-row">
+
+                <strong>
+                    5K+
+                </strong>
+
+                <span>
+                    Patients supported through recovery
+                </span>
+
+            </div>
+
+
+            <div class="metric-row">
+
+                <strong>
+                    4.9
+                </strong>
+
+                <span>
+                    Patient satisfaction rating
+                </span>
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+</section>
+
+
+
+<!-- =========================================================
+     WHY US
+     ========================================================= -->
+
+<section class="why axiom-section">
+
+
+    <div class="section-container">
+
+
+        <div class="center-head">
+
+
+            <div class="index-label">
+                WHY US / 07
+            </div>
+
+
+            <h2>
+
+                Why patients choose
+
+                <br>
+
+                <em>Dr. Sanjeev Pal.</em>
+
+            </h2>
+
+
+        </div>
+
+
+
+        <div class="why-light">
+
+
+            <article>
+
+                <strong>
+                    01
+                </strong>
+
+                <h3>
+                    Personalised Treatment
+                </h3>
+
+                <p>
+
+                    Treatment plans are adapted to
+                    individual conditions and goals.
+
+                </p>
+
+            </article>
+
+
+            <article>
+
+                <strong>
+                    02
+                </strong>
+
+                <h3>
+                    Experienced Care
+                </h3>
+
+                <p>
+
+                    Professional experience combined
+                    with patient-focused rehabilitation.
+
+                </p>
+
+            </article>
+
+
+            <article>
+
+                <strong>
+                    03
+                </strong>
+
+                <h3>
+                    Modern Approach
+                </h3>
+
+                <p>
+
+                    Evidence-informed techniques and
+                    appropriate therapeutic technology.
+
+                </p>
+
+            </article>
+
+
+        </div>
+
+
+        <div class="why-dark">
+
+
+            <article>
+
+                <strong>
+                    04
+                </strong>
+
+                <h3>
+                    Long-Term Recovery
+                </h3>
+
+                <p>
+
+                    Focus on sustainable mobility,
+                    strength and functional independence.
+
+                </p>
+
+            </article>
+
+
+            <article>
+
+                <strong>
+                    05
+                </strong>
+
+                <h3>
+                    Comfortable Environment
+                </h3>
+
+                <p>
+
+                    A supportive environment where
+                    patients can focus on recovery.
+
+                </p>
+
+            </article>
+
+
+        </div>
+
+
+    </div>
+
+
+</section>
+
+
+
+<!-- =========================================================
+     CONDITIONS / PAIN AREAS
+     ========================================================= -->
+
+<section class="attention dark-section">
+
+
+    <div class="section-container">
+
+
+        <div class="center-head">
+
+
+            <div class="index-label">
+                CONDITIONS / 08
+            </div>
+
+
+            <h2>
+
+                What can we
+
+                <br>
+
+                help you
+
+                <em>
+                    recover from?
+                </em>
+
+            </h2>
+
+
+        </div>
+
+
+
+        <div class="pain-grid">
+
+
+            <a href="#book"
+               data-open-booking>
+
+                <img src="assets/3.png"
+                     alt="Hip Pain">
+
+                <span>
+                    Hip Pain
+                    ↗
+                </span>
+
+            </a>
+
+
+            <a href="#book"
+               data-open-booking>
+
+                <img src="assets/5.png"
+                     alt="Elbow Pain">
+
+                <span>
+                    Elbow Pain
+                    ↗
+                </span>
+
+            </a>
+
+
+            <a href="#book"
+               data-open-booking>
+
+                <img src="assets/4.png"
+                     alt="Knee Pain">
+
+                <span>
+                    Knee Pain
+                    ↗
+                </span>
+
+            </a>
+
+
+            <a href="#book"
+               data-open-booking>
+
+                <img src="assets/2.png"
+                     alt="Shoulder Pain">
+
+                <span>
+                    Shoulder Pain
+                    ↗
+                </span>
+
+            </a>
+
+
+            <a href="#book"
+               data-open-booking>
+
+                <img src="assets/6.png"
+                     alt="Tricep Pain">
+
+                <span>
+                    Tricep Pain
+                    ↗
+                </span>
+
+            </a>
+
+
+            <a href="#book"
+               data-open-booking>
+
+                <img src="assets/8.png"
+                     alt="Foot Pain">
+
+                <span>
+                    Foot Pain
+                    ↗
+                </span>
+
+            </a>
+
+
+        </div>
+
+
+    </div>
+
+
+</section>
+
+
+
+<!-- =========================================================
+     REVIEWS
+     ========================================================= -->
+
+<section class="reviews axiom-section"
+         id="reviews">
+
+
+    <div class="section-container">
+
+
+        <div class="center-head">
+
+
+            <div class="index-label">
+                PATIENT STORIES / 09
+            </div>
+
+
+            <h2>
+
+                Real people.
+
+                <br>
+
+                <em>Real recovery.</em>
+
+            </h2>
+
+
+        </div>
+
+
+
+        <div class="review-grid">
+
+
+            <article>
+
+
+                <span>
+                    ★★★★★
+                </span>
+
+
+                <h3>
+                    Excellent Care
+                </h3>
+
+
+                <p>
+
+                    Very professional approach and
+                    supportive treatment experience.
+                    The guidance throughout recovery
+                    was extremely helpful.Brilliant staff with great knowledge.
+Well equipped physiotherapy centre and staff is very cooperative. Highly recommended
+
+
+                </p>
+
+
+                <strong>
+                    — Patient
+                </strong>
+
+
+            </article>
+
+
+
+            <article>
+
+
+                <span>
+                    ★★★★★
+                </span>
+
+
+                <h3>
+                    Highly Recommended
+                </h3>
+
+
+                <p>
+
+                    The treatment was personalised and
+                    easy to understand. I felt comfortable
+                    throughout the rehabilitation process.I got bellys palsy with in 20 days I m fully recovered all staff is very GOOD and cooperative
+
+
+                </p>
+
+
+                <strong>
+                    — Patient
+                </strong>
+
+
+            </article>
+
+
+
+            <article>
+
+
+                <span>
+                    ★★★★★
+                </span>
+
+
+                <h3>
+                    Great Experience
+                </h3>
+
+
+                <p>
+
+                    Professional, patient-focused and
+                    genuinely concerned about recovery.Had a very good experience here
+Got relief in my pain and I will definitely suggest my friends and relatives to go and visit here.
+
+
+                </p>
+
+
+                <strong>
+                    — Patient
+                </strong>
+
+
+            </article>
+
+
+        </div>
+
+
+    </div>
+
+
+</section>
+
+
+
+<!-- =========================================================
+     RECOVERY CTA
+     ========================================================= -->
+
+<section class="recovery axiom-section">
+
+
+    <div class="section-container">
+
+
+        <div class="recovery-card">
+
+
+            <div>
+
+
+                <div class="index-label">
+                    START / 10
+                </div>
+
+
+                <h2>
+
+                    Your recovery
+
+                    <br>
+
+                    starts
+
+                    <em>
+                        here.
+                    </em>
+
+                </h2>
+
+
+            </div>
+
+
+            <div>
+
+
+                <p>
+
+                    Take the first step towards better
+                    movement, less pain and improved
+                    quality of life.
+
+                </p>
+
+
+                <button class="pill primary book-appointment-btn"
+                        type="button">
+
+                    Book Appointment
+
+                    <span>
+                        ↗
+                    </span>
+
+                </button>
+
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+</section>
+
+
+
+<!-- =========================================================
+     FOOTER
+     ========================================================= -->
+
+<footer id="contact">
+
+
+    <div class="footer-container">
+
+
+        <div class="footer-main">
+
+
+            <div class="footer-brand">
+
+
+                <img src="assets/sanjeevpal.png"
+                     alt="Dr. Sanjeev Pal"
+                     class="footer-logo">
+
+
+                <p>
+
+                    Professional physiotherapy and
+                    rehabilitation focused on helping
+                    you move better and live better.
+
+                </p>
+
+
+            </div>
+
+
+
+            <div class="footer-column">
+
+
+                <h4>
+                    Navigation
+                </h4>
+
+
+                <a href="#home">
+                    Home
+                </a>
+
+
+                <a href="#about">
+                    About
+                </a>
+
+
+                <a href="#services">
+                    Services
+                </a>
+
+
+                <a href="#reviews">
+                    Reviews
+                </a>
+
+
+                <a href="#contact">
+                    Contact
+                </a>
+
+
+            </div>
+
+
+
+            <div class="footer-column">
+
+
+                <h4>
+                    Services
+                </h4>
+
+
+                <a href="#services">
+                    Manual Therapy
+                </a>
+
+
+                <a href="#services">
+                    Chronic Pain
+                </a>
+
+
+                <a href="#services">
+                    Hand Therapy
+                </a>
+
+
+                <a href="#services">
+                    Sports Therapy
+                </a>
+
+
+                <a href="#services">
+                    Laser Therapy
+                </a>
+
+
+            </div>
+
+
+
+            <div class="footer-column">
+
+
+                <h4>
+                    Contact
+                </h4>
+
+
+                <a href="tel:+919716477008">
+                    +91 97164 77008
+                </a>
+
+
+                <a href="https://wa.me/919716477008"
+                   target="_blank">
+
+                    WhatsApp
+
+                </a>
+
+
+                <button type="button"
+                        class="footer-book book-appointment-btn"
+                        data-open-booking>
+
+                    Book Appointment
+                    ↗
+
+                </button>
+
+
+            </div>
+
+
+        </div>
+
+
+
+        <div class="footer-bottom">
+
+
+            <span>
+                © 2026 Dr. Sanjeev Pal Physiotherapy.
+                All rights reserved.
+            </span>
+
+
+            <span class="footer-mark">
+                PHYSIOTHERAPY / REHABILITATION
+            </span>
+
+
+        </div>
+
+
+    </div>
+
+
+</footer>
+
+
+</main>
+
+
+
+<!-- =========================================================
+     BOOKING POPUP
+     ========================================================= -->
+
+<div class="booking-overlay"
+     id="bookingOverlay"
+     aria-hidden="true">
+
+
+    <div class="booking-modal"
+         id="book">
+
+
+        <button class="booking-close"
+                id="closeBooking"
+                type="button"
+                aria-label="Close booking form">
+
+            ×
+
+        </button>
+
+
+
+        <div class="booking-content">
+
+
+            <!-- LEFT -->
+
+            <div class="booking-intro">
+
+
+                <div class="booking-kicker">
                     BOOKING / 01
                 </div>
 
@@ -227,6 +1811,9 @@
                 <h2>
 
                     <em>Book</em>
+
+                    <br>
+
                     Appointment
 
                 </h2>
@@ -234,69 +1821,155 @@
 
                 <p>
 
-                    Easily schedule your appointment by
-                    filling out our simple form.
+                    Easily schedule your appointment
+                    by filling out the simple form.
+                    Our clinic team can follow up with
+                    you regarding your preferred location
+                    and appointment.
 
                 </p>
 
 
+                <div class="booking-info">
+
+
+                    <div>
+
+                        <span>
+                            01
+                        </span>
+
+                        <p>
+                            Choose your preferred clinic
+                        </p>
+
+                    </div>
+
+
+                    <div>
+
+                        <span>
+                            02
+                        </span>
+
+                        <p>
+                            Share your contact details
+                        </p>
+
+                    </div>
+
+
+                    <div>
+
+                        <span>
+                            03
+                        </span>
+
+                        <p>
+                            Clinic follow-up
+                        </p>
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- RIGHT -->
+
+            <div class="booking-form-area">
+
+
                 <form id="appointmentForm">
+
 
                     <label>
 
-                        Full Name <i>*</i>
+                        Full Name
+                        <i>*</i>
+
 
                         <input type="text"
+                               name="name"
                                required
                                placeholder="Enter Your Name">
 
                     </label>
 
 
-                    <div class="two">
 
-                        <label>
+                    <label>
 
-                            Phone Number <i>*</i>
-
-                            <input type="tel"
-                                   required
-                                   placeholder="Enter Your Phone">
-
-                        </label>
+                        Phone Number
+                        <i>*</i>
 
 
-                        <label>
+                        <input type="tel"
+                               name="phone"
+                               required
+                               placeholder="Enter Your Phone">
 
-                            Choose Near By <i>*</i>
+                    </label>
 
-                            <select required>
 
-                                <option>
-                                    Punjabi Bagh
-                                </option>
 
-                                <option>
-                                    Naraina
-                                </option>
+                    <label>
 
-                                <option>
-                                    Inder Puri
-                                </option>
+                        Choose Near By
+                        <i>*</i>
 
-                            </select>
 
-                        </label>
+                        <select name="location"
+                                required>
 
-                    </div>
+                            <option value="">
+                                Select Clinic
+                            </option>
+
+                            <option>
+                                Punjabi Bagh
+                            </option>
+
+                            <option>
+                                Naraina
+                            </option>
+
+                            <option>
+                                Inder Puri
+                            </option>
+
+                        </select>
+
+                    </label>
+
+
+
+                    <label>
+
+                        Preferred Date
+
+
+                        <input type="date"
+                               name="date">
+
+                    </label>
+
 
 
                     <button class="form-submit"
                             type="submit">
 
-                        Book Appointment
+                        <span>
+                            Book Appointment
+                        </span>
 
-                        <span>↗</span>
+                        <b>
+                            ↗
+                        </b>
 
                     </button>
 
@@ -308,1655 +1981,454 @@
 
                     </small>
 
+
                 </form>
 
-            </div>-->
-
-        </section>   
-
-
-
-        <!-- ================= ABOUT ================= -->
-
-        <section class="about axiom-section"
-                 id="about">
-
-            <div class="index-label">
-                SYSTEM / 02 — ABOUT US
-            </div>
-
-
-            <div class="about-grid">
-
-                <div>
-                              <img src="assets/sanjeevpal.png"
-                 alt="Dr. Sanjeev Pal" width="100%" height="100%">
-
-                </div>
-
-
-                <div class="about-copy reveal">
-
-                    <span class="tag">
-                        About Us
-                    </span>
-
-
-                    <h2>
-
-                        Dr. Sanjeev Pal Yadav
-
-                        <small>
-                            (Physiotherapist)
-                        </small>
-
-                    </h2>
-
-
-                    <p class="leadline">
-
-                        Dr Sanjeev Pal yadav 
-
-                        <br>
-
-                        BPT MPT (Neurology)
-
-                        <br>
-
-                        Pain and Paralysis Specialist Physiotherapist
-
-                        <br>
-
-                        MGS Hospital Punjabi Bagh
-
-                        <br>
-
-                        HOD Physiotherapy Department
-
-                        <br>
-
-                        23 Years Experience Overall
-                        (15 years as specialist)
-
-                    </p>
-
-
-                    <p>
-
-                        Dr. Sanjeev Pal Yadav is a Neuro
-                        Physiotherapist and has an experience
-                        of 23 years in this field.
-
-                        He completed BPTh/BPT from Florence
-                        College of Physiotheraphy in 2002 and
-                        MPTh/MPT - Neurological Physiotherapy
-                        from IAMR, Ghaziabad in 2005.
-
-                    </p>
-
-
-                    <div class="profile-line">
-
-                        <span>
-                            NEURO PHYSIOTHERAPY
-                        </span>
-
-                        <span>
-                            PAIN & PARALYSIS
-                        </span>
-
-                        <span>
-                            REHABILITATION
-                        </span>
-
-                    </div>
-
-                </div>
 
             </div>
 
-        </section>
-
-
-
-        <!-- ================= BRANCHES ================= -->
-
-        <section class="branches dark-section axiom-section">
-
-            <div class="section-head">
-
-                <div>
-
-                    <div class="index-label">
-                        SYSTEM / 03 — LOCATIONS
-                    </div>
-
-                    <h2>
-                        Our <em>Branches</em>
-                    </h2>
-
-                </div>
-
-
-                <p>
-
-                    Clinic locations and timings
-                    from the supplied Dr. Sanjeev Pal page.
-
-                </p>
-
-            </div>
-
-
-            <div class="branch-grid">
-
-
-                <article>
-
-                    <span class="branch-no">
-                        01
-                    </span>
-
-                    <h3>
-                        Punjabi Bagh
-                    </h3>
-
-                    <p>
-
-                        MGS HOSPITAL
-
-                        <br>
-
-                        HOD PHYSIOTHERAPY DEPARTMENT
-
-                    </p>
-
-
-                    <p>
-
-                        Block C, 35/37, Rohtak Rd,
-                        Shivaji Park, Block C,
-                        West Punjabi Bagh,
-                        Punjabi Bagh,
-                        New Delhi,
-                        Delhi, 110026
-
-                    </p>
-
-
-                    <b>
-                        Timing :
-                        <i>9 am to 5 pm</i>
-                    </b>
-
-                </article>
-
-
-
-                <article>
-
-                    <span class="branch-no">
-                        02
-                    </span>
-
-                    <h3>
-                        Naraina
-                    </h3>
-
-
-                    <p>
-
-                        H-block Ln,
-                        Inside Sanatan Dharam Mandir,
-                        Uday Niketan,
-                        Pocket H,
-                        Naraina Vihar,
-                        Naraina,
-                        New Delhi,
-                        Delhi 110028
-
-                    </p>
-
-
-                    <b>
-                        Timing :
-                        <i>9 am to 1 pm</i>
-                    </b>
-
-                    <b class="subtime">
-                        <i>5 pm to 8 pm</i>
-                    </b>
-
-                </article>
-
-
-
-                <article>
-
-                    <span class="branch-no">
-                        03
-                    </span>
-
-                    <h3>
-                        Inder Puri
-                    </h3>
-
-
-                    <p>
-
-                        B - Block,
-                        Block EB,
-                        Inside Arya Samaj Mandir
-                        Inder Puri,
-                        New Delhi,
-                        Delhi 110012
-
-                    </p>
-
-
-                    <b>
-                        Timing :
-                        <i>9 am to 12 pm</i>
-                    </b>
-
-                    <b class="subtime">
-                        <i>5 pm to 7 pm</i>
-                    </b>
-
-                </article>
-
-            </div>
-
-        </section>
-
-
-
-        <!-- ================= HOME VISIT ================= -->
-
-        <section class="homevisit axiom-section">
-
-            <div class="index-label">
-                SYSTEM / 04 — HOME VISIT
-            </div>
-
-
-            <div class="home-grid">
-
-                <div class="reveal">
-
-                    <span class="tag">
-                        Home Visit
-                    </span>
-
-
-                    <h2>
-
-                        Expert Physiotherapy,
-
-                        <br>
-
-                        Right At Your
-                        <em>Doorstep</em>
-
-                    </h2>
-
-
-                    <p>
-
-                        Our home visit service brings
-                        professional physiotherapy directly
-                        to you, available throughout Delhi NCR.
-
-                        Ideal for those with mobility issues,
-                        busy schedules, or those who simply
-                        prefer the comfort of their own environment.
-
-                    </p>
-
-
-                    <a class="pill primary"
-                       href="#contact">
-
-                        Learn More About Home Visits
-
-                        <span>↗</span>
-
-                    </a>
-
-                </div>
-
-
-                <div>
-            <img src="assets/sanjeevpal.jpeg"
-                 alt="Dr. Sanjeev Pal" width="auto" height="auto">
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-
-        <!-- ================= SERVICES ================= -->
-
-        <section class="services axiom-section"
-                 id="services">
-
-            <div class="section-head">
-
-                <div>
-
-                    <div class="index-label">
-                        SYSTEM / 05 — SERVICES
-                    </div>
-
-                    <h2>
-
-                        <em>We Provide</em>
-
-                        The Best
-
-                        <br>
-
-                        Services
-
-                    </h2>
-
-                </div>
-
-
-                <a class="pill secondary"
-                   href="#services">
-
-                    View All Services
-
-                    <span>↗</span>
-
-                </a>
-
-            </div>
-
-
-            <div class="service-grid">
-
-
-                <!-- SERVICE 01 -->
-
-                <article id="manual">
-
-                    <span>01</span>
-
-                    <div class="service-image photo"
-                         data-src="Manual Therapy.png">
-
-                        <span class="photo-fallback">
-                            MANUAL
-                            <br>
-                            THERAPY
-                        </span>
-
-                    </div>
-
-
-                    <h3>
-                        Manual Therapy
-                    </h3>
-
-
-                    <p>
-
-                        Manual Therapy:
-                        Hands-on techniques to relieve
-                        pain, improve mobility,
-                        and restore function.
-
-                    </p>
-
-
-                    <a href="#contact">
-                        ↗
-                    </a>
-
-                </article>
-
-
-
-                <!-- SERVICE 02 -->
-
-                <article id="chronic">
-
-                    <span>02</span>
-
-                    <div class="service-image photo"
-                         data-src="Chronic Pain.png">
-
-                        <span class="photo-fallback">
-                            CHRONIC
-                            <br>
-                            PAIN
-                        </span>
-
-                    </div>
-
-
-                    <h3>
-                        Chronic Pain
-                    </h3>
-
-
-                    <p>
-
-                        Chronic Pain:
-                        Specialized therapy to manage
-                        long-term pain and improve
-                        daily function.
-
-                    </p>
-
-
-                    <a href="#contact">
-                        ↗
-                    </a>
-
-                </article>
-
-
-
-                <!-- SERVICE 03 -->
-
-                <article id="stroke">
-
-                    <span>03</span>
-
-                    <div class="service-image photo"
-                         data-src="stock.png">
-
-                        <span class="photo-fallback">
-                            STROKE
-                            <br>
-                            PHYSIOTHERAPY
-                        </span>
-
-                    </div>
-
-
-                    <h3>
-                        Stroke (Paralysis) physiotherapy
-                    </h3>
-
-
-                    <p>
-
-                        Stroke (Paralysis) Physiotherapy:
-                        Rehabilitation to restore movement,
-                        strength, and independence after stroke.
-
-                    </p>
-
-
-                    <a href="#contact">
-                        ↗
-                    </a>
-
-                </article>
-
-
-
-                <!-- SERVICE 04 -->
-
-                <article id="hand">
-
-                    <span>04</span>
-
-                    <div class="service-image photo"
-                         data-src="Hand Therapy.png">
-
-                        <span class="photo-fallback">
-                            HAND
-                            <br>
-                            THERAPY
-                        </span>
-
-                    </div>
-
-
-                    <h3>
-                        Hand Therapy
-                    </h3>
-
-
-                    <p>
-
-                        Hand Therapy:
-                        Targeted rehabilitation to improve
-                        hand strength, mobility,
-                        and functional use.
-
-                    </p>
-
-
-                    <a href="#contact">
-                        ↗
-                    </a>
-
-                </article>
-
-
-
-                <!-- SERVICE 05 -->
-
-                <article id="sports">
-
-                    <span>05</span>
-
-                    <div class="service-image photo"
-                         data-src="Sports Therapy.png">
-
-                        <span class="photo-fallback">
-                            SPORTS
-                            <br>
-                            THERAPY
-                        </span>
-
-                    </div>
-
-
-                    <h3>
-                        Sports Therapy
-                    </h3>
-
-
-                    <p>
-
-                        Sports Therapy:
-                        Injury prevention and recovery therapy
-                        to enhance athletic performance
-                        and mobility.
-
-                    </p>
-
-
-                    <a href="#contact">
-                        ↗
-                    </a>
-
-                </article>
-
-
-
-                <!-- SERVICE 06 -->
-
-                <article id="cupping">
-
-                    <span>06</span>
-
-                    <div class="service-image photo"
-                         data-src="Cupping Therapys.png">
-
-                        <span class="photo-fallback">
-                            CUPPING
-                            <br>
-                            THERAPY
-                        </span>
-
-                    </div>
-
-
-                    <h3>
-                        Cupping Therapy
-                    </h3>
-
-
-                    <p>
-
-                        Cupping Therapy:
-                        Suction-based technique to relieve pain,
-                        reduce tension,
-                        and improve circulation.
-
-                    </p>
-
-
-                    <a href="#contact">
-                        ↗
-                    </a>
-
-                </article>
-
-
-
-                <!-- SERVICE 07 -->
-
-                <article id="laser">
-
-                    <span>07</span>
-
-                    <div class="service-image photo"
-                         data-src="Laser Therapy.png">
-
-                        <span class="photo-fallback">
-                            LASER
-                            <br>
-                            THERAPY
-                        </span>
-
-                    </div>
-
-
-                    <h3>
-                        Laser Therapy
-                    </h3>
-
-
-                    <p>
-
-                        Laser Therapy:
-                        Non-invasive treatment using light
-                        energy to reduce pain
-                        and inflammation.
-
-                    </p>
-
-
-                    <a href="#contact">
-                        ↗
-                    </a>
-
-                </article>
-
-            </div>
-
-        </section>
-
-
-
-        <!-- ================= QUALITY ================= -->
-
-        <section class="quality axiom-section">
-
-            <div class="quality-photo photo"
-                 data-src="sanjeev-2.jpeg">
-
-                <span class="photo-fallback">
-
-                    PHYSIOTHERAPY
-
-                    <br>
-
-                    SESSION
-
-                </span>
-
-            </div>
-
-
-            <div class="quality-copy">
-
-                <div class="index-label">
-                    SYSTEM / 06 — QUALITY TREATMENT
-                </div>
-
-
-                <span class="tag">
-                    Solution To Your Plan
-                </span>
-
-
-                <h2>
-
-                    <em>We Proudly</em>
-
-                    Give
-
-                    <br>
-
-                    Quality Treatment
-
-                </h2>
-
-
-                <p>
-
-                    We understand that injuries and acute
-                    pain can happen unexpectedly.
-                    Our emergency physiotherapy services
-                    are designed to provide prompt and
-                    effective care to help you manage.
-
-                </p>
-
-
-                <ul>
-
-                    <li>
-                        We understand that injuries.
-                    </li>
-
-                    <li>
-                        can happen unexpectedly Our emergency.
-                    </li>
-
-                    <li>
-                        We understand that injuries.
-                    </li>
-
-                </ul>
-
-
-                <div class="metric-row">
-
-                    <div>
-
-                        <strong>
-                            78+
-                        </strong>
-
-                        <span>
-                            Skilled Therapist
-                        </span>
-
-                    </div>
-
-
-                    <div>
-
-                        <strong>
-                            98%
-                        </strong>
-
-                        <span>
-                            Success Rate
-                        </span>
-
-                    </div>
-
-
-                    <div>
-
-                        <strong>
-                            950+
-                        </strong>
-
-                        <span>
-                            Patients Treated
-                        </span>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-
-        <!-- ================= WHY US ================= -->
-
-        <section class="why axiom-section">
-
-            <div class="center-head">
-
-                <div class="index-label">
-                    SYSTEM / 07 — WHY US
-                </div>
-
-
-                <h2>
-
-                    <em>Excellence In</em>
-
-                    Care And
-
-                    <br>
-
-                    Rehabilitation
-
-                </h2>
-
-            </div>
-
-
-            <div class="why-grid">
-
-
-                <div class="why-light">
-
-                    <article>
-
-                        <strong>01</strong>
-
-                        <div>
-
-                            <h3>
-                                Experienced Team
-                            </h3>
-
-                            <p>
-                                Skilled physiotherapists
-                                delivering expert care
-                                with proven results.
-                            </p>
-
-                        </div>
-
-                    </article>
-
-
-                    <article>
-
-                        <strong>02</strong>
-
-                        <div>
-
-                            <h3>
-                                Patient-Centered Approach
-                            </h3>
-
-                            <p>
-                                Focused on personalized care
-                                tailored to each patient's needs.
-                            </p>
-
-                        </div>
-
-                    </article>
-
-
-                    <article>
-
-                        <strong>03</strong>
-
-                        <div>
-
-                            <h3>
-                                Expertise And Experience
-                            </h3>
-
-                            <p>
-                                Decades of clinical excellence
-                                in neuro and pain therapy.
-                            </p>
-
-                        </div>
-
-                    </article>
-
-                </div>
-
-
-
-                <div class="why-dark">
-
-                    <article>
-
-                        <strong>04</strong>
-
-                        <div>
-
-                            <h3>
-                                Advanced Technology
-                            </h3>
-
-                            <p>
-                                Utilizing modern physiotherapy
-                                equipment for faster,
-                                effective recovery.
-                            </p>
-
-                        </div>
-
-                    </article>
-
-
-                    <article>
-
-                        <strong>05</strong>
-
-                        <div>
-
-                            <h3>
-                                Convenient And Accessible
-                            </h3>
-
-                            <p>
-                                Easily reachable locations
-                                with flexible,
-                                patient-friendly scheduling.
-                            </p>
-
-                        </div>
-
-                    </article>
-
-
-                    <article>
-
-                        <strong>06</strong>
-
-                        <div>
-
-                            <h3>
-                                Community Involvement
-                            </h3>
-
-                            <p>
-                                Actively engaged in health camps,
-                                awareness drives,
-                                and outreach programs.
-                            </p>
-
-                        </div>
-
-                    </article>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-
-        <!-- ================= PAIN AREAS ================= -->
-
-        <section class="attention dark-section axiom-section">
-
-            <div class="center-head">
-
-                <div class="index-label">
-                    SYSTEM / 08 — NEED ATTENTION
-                </div>
-
-
-                <span class="tag dark-tag">
-                    Need Attention
-                </span>
-
-
-                <h2>
-                    Where Do You Need Attention?
-                </h2>
-
-
-                <p>
-
-                    We understand that injuries and acute
-                    pain can happen unexpectedly.
-                    Our emergency physiotherapy services
-                    are designed to provide prompt and
-                    effective care.
-
-                </p>
-
-            </div>
-
-
-            <div class="pain-grid">
-
-                <a>
-                    <img src="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWnD_EyvBpo5CYBJSG6g9xMUIMOvvZa4THGmLQ-q0Ab5xNereq1B8rPeYiB_SUYJRkkvR-bYMeqeSeBTzbFwyRb3sNXDArHi9S6IUg96wjm1KJJmgAcTT_XrcDsC-Y00R1WyP7etpJNVWsLE=w204-h204-n-k-no-nu"
-                         alt="Neck Pain">
-
-                    <span>
-                        Neck Pain
-                    </span>
-                </a>
-
-
-                <a>
-                    <img src="assets/2.png"
-                         alt="Shoulder Pain">
-
-                    <span>
-                        Shoulder Pain
-                    </span>
-                </a>
-
-
-                <a>
-                    <img src="assets/3.png"
-                         alt="Hip Pain">
-
-                    <span>
-                        Hip Pain
-                    </span>
-                </a>
-
-
-                <a>
-                    <img src="assets/4.png"
-                         alt="Knee Pain">
-
-                    <span>
-                        Knee Pain
-                    </span>
-                </a>
-
-
-                <a>
-                    <img src="assets/5.png"
-                         alt="Elbow Pain">
-
-                    <span>
-                        Elbow Pain
-                    </span>
-                </a>
-
-
-                <a>
-                    <img src="assets/6.png"
-                         alt="Tricep Pain">
-
-                    <span>
-                        Tricep Pain
-                    </span>
-                </a>
-
-
-                <a>
-                    <img src="assets/7.png"
-                         alt="Hand Pain">
-
-                    <span>
-                        Hand Pain
-                    </span>
-                </a>
-
-
-                <a>
-                    <img src="assets/8.png"
-                         alt="Foot Pain">
-
-                    <span>
-                        Foot Pain
-                    </span>
-                </a>
-
-
-                <a>
-                    <img src="assets/9.png"
-                         alt="Ankle Pain">
-
-                    <span>
-                        Ankle Pain
-                    </span>
-                </a>
-
-               <a>
-                    <img src="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWlnoupV6LJTVV8ACpw_kWM6yTod2b1xH_3b1euOFFBS9qyQDZretT0raVffUE0-lU5vBPp9EWGowP2PRSvxcrHKUQmTL18_LFsPwNuxXN1g3fLd7u1eY7B-mQIAGq9LfP5fZX49zsyAs-CG=w243-h244-n-k-no-nu"
-                         alt="Occipital Nerve Pressure">
-
-                    <span>
-                        Occipital Nerve Pressure
-                    </span>
-                </a>
-
-
-            </div>
-
-        </section>
-
-
-
-        <!-- ================= GALLERY ================= -->
-
-       <!-- <section class="gallery axiom-section">
-
-            <div class="section-head">
-
-                <div>
-
-                    <div class="index-label">
-                        SYSTEM / 09 — GALLERY
-                    </div>
-
-                    <h2>
-                        Practice <em>in motion.</em>
-                    </h2>
-
-                </div>
-
-
-                <p>
-
-                    Physiotherapy sessions,
-                    treatment moments and
-                    clinical practice.
-
-                </p>
-
-            </div>
-
-
-            <div class="gallery-grid">
-
-                <div class="gallery-photo tall photo"
-                     data-src="sanjeev-2.jpeg">
-
-                    <span class="photo-fallback">
-                        01
-                    </span>
-
-                </div>
-
-
-                <div class="gallery-photo photo"
-                     data-src="sanjeev-3.jpeg">
-
-                    <span class="photo-fallback">
-                        02
-                    </span>
-
-                </div>
-
-
-                <div class="gallery-photo photo"
-                     data-src="sanjeev-4.jpeg">
-
-                    <span class="photo-fallback">
-                        03
-                    </span>
-
-                </div>
-
-
-                <div class="gallery-photo photo"
-                     data-src="sanjeev-7.jpeg">
-
-                    <span class="photo-fallback">
-                        04
-                    </span>
-
-                </div>
-
-
-                <div class="gallery-photo photo"
-                     data-src="sanjeev-6.jpeg">
-
-                    <span class="photo-fallback">
-                        05
-                    </span>
-
-                </div>
-
-
-                <div class="gallery-caption">
-
-                    <span>
-                        IMAGE INDEX / 05
-                    </span>
-
-                    <strong>
-
-                        Physiotherapy
-
-                        <br>
-
-                        session archive
-
-                    </strong>
-
-                    <p>
-                        Clinical care,
-                        rehabilitation
-                        and patient sessions.
-                    </p>
-
-                </div>
-
-            </div>
-
-        </section> -->
-
-
-
-        <!-- ================= REVIEWS ================= -->
-
-        <section class="reviews axiom-section"
-                 id="reviews">
-
-            <div class="center-head">
-
-                <div class="index-label">
-                    SYSTEM / 10 — REVIEWS
-                </div>
-
-
-                <span class="tag">
-                    Reviews
-                </span>
-
-
-                <h2>
-
-                    <em>What</em>
-
-                    Our Patients Say
-
-                </h2>
-
-
-                <p>
-
-                    Hear what patients say about
-                    Dr. Sanjeev Pal Yadav's expert
-                    physiotherapy care and
-                    personalized treatment approach.
-
-                </p>
-
-            </div>
-
-
-            <div class="review-grid">
-
-
-                <article>
-
-                    <span>
-                        ★★★★★
-                    </span>
-
-                    <h3>
-                        Kuber Nath Pathak
-                    </h3>
-
-                    <p>
-                        Very good treatment and
-                        behaviour of all staff
-                    </p>
-
-                </article>
-
-
-                <article>
-
-                    <span>
-                        ★★★★★
-                    </span>
-
-                    <h3>
-                        Amal Kumar gupta
-                    </h3>
-
-                    <p>
-                        Excellent treatment
-                    </p>
-
-                </article>
-
-
-                <article>
-
-                    <span>
-                        ★★★★★
-                    </span>
-
-                    <h3>
-                        Ranjana Kumar
-                    </h3>
-
-                    <p>
-                        Best physiotherapy clinic
-                        in west Punjabi bagh
-                    </p>
-
-                </article>
-
-
-                <article>
-
-                    <span>
-                        ★★★★★
-                    </span>
-
-                    <h3>
-                        Manni Bhatia
-                    </h3>
-
-                    <p>
-                        Good Service
-                    </p>
-
-                </article>
-
-
-                <article>
-
-                    <span>
-                        ★★★★★
-                    </span>
-
-                    <h3>
-                        Vernakumari
-                    </h3>
-
-                    <p>
-                        Best physiotherapy center
-                        for back pain and paralysis
-                    </p>
-
-                </article>
-
-
-                <article>
-
-                    <span>
-                        ★★★★★
-                    </span>
-
-                    <h3>
-                        Ranjana Kumar
-                    </h3>
-
-                    <p>
-                        Best physiotherapy clinic
-                        in west Punjabi bagh
-                    </p>
-
-                </article>
-
-            </div>
-
-
-            <a class="pill primary center-button"
-               href="https://www.physiotherapydoctor.in/index.html"
-               target="_blank">
-
-                Read More Reviews ↗
-
-            </a>
-
-        </section>
-
-
-
-        <!-- ================= RECOVERY CTA ================= -->
-
-        <section class="recovery axiom-section">
-
-            <div class="recovery-card">
-
-                <div>
-
-                    <div class="index-label">
-                        SYSTEM / 11 — NEXT STEP
-                    </div>
-
-
-                    <h2>
-
-                        Ready To Start Your
-                        Journey To Recovery?
-
-                    </h2>
-
-
-                    <p>
-
-                        Contact us today to schedule
-                        your initial consultation and
-                        take the first step towards
-                        a pain-free life.
-
-                    </p>
-
-                </div>
-
-
-                <a class="pill primary"
-                   href="#book">
-
-                    Book Appointment
-
-                    <span>↗</span>
-
-                </a>
-
-            </div>
-
-        </section>
-
-
-        <section id="career"></section>
-
-    </main>
-
-
-
-    <!-- ================= FLOATING ACTIONS ================= -->
-
-    <div class="floating-actions">
-
-        <a class="wa"
-           href="https://wa.me/919716477008"
-           target="_blank">
-
-            WA
-
-        </a>
-
-
-        <a class="call"
-           href="tel:+919716477008">
-
-            ☎
-
-        </a>
-
-    </div>
-
-
-
-    <!-- ================= FOOTER ================= -->
-
-    <footer id="contact">
-
-        <div class="footer-top">
-
-
-            <div class="footer-brand">
-
-                <div class="footer-mark">
-                    SP
-                </div>
-
-
-                <h3>
-                    DR. SANJEEV PAL
-                </h3>
-
-
-                <p>
-
-                    We understand that injuries
-                    and acute pain can happen
-                    unexpectedly.
-
-                </p>
-
-
-                <div class="footer-social">
-
-                    <a href="#">
-                        Facebook
-                    </a>
-
-                    <a href="#">
-                        Instagram
-                    </a>
-
-                    <a href="#">
-                        YouTube
-                    </a>
-
-                </div>
-
-            </div>
-
-
-
-            <div>
-
-                <h4>
-                    WORKING HOURS
-                </h4>
-
-                <p>
-                    Mon - Sat :
-                    08 AM to 08 PM
-                </p>
-
-                <p>
-                    Sun :
-                    09 AM to 09 PM
-                </p>
-
-            </div>
-
-
-
-            <div>
-
-                <h4>
-                    MORE SERVICES
-                </h4>
-
-                <p>
-                    <a href="#manual">
-                        Manual Therapy
-                    </a>
-                </p>
-
-                <p>
-                    <a href="#chronic">
-                        Chronic Pain
-                    </a>
-                </p>
-
-                <p>
-                    <a href="#hand">
-                        Hand Therapy
-                    </a>
-                </p>
-
-            </div>
-
-
-
-            <div>
-
-                <h4>
-                    CONTACT
-                </h4>
-
-                <p>
-
-                    <a href="tel:+919716477008">
-                        +91 9716477008
-                    </a>
-
-                </p>
-
-
-                <p>
-
-                    MGS HOSPITAL
-
-                    <br>
-
-                    HOD PHYSIOTHERAPY DEPARTMENT
-
-                    <br>
-
-                    Block C, 35/37,
-                    Rohtak Rd,
-                    Shivaji Park,
-                    West Punjabi Bagh,
-                    New Delhi,
-                    Delhi, 110026
-
-                </p>
-
-            </div>
 
         </div>
 
 
-        <div class="footer-bottom">
-
-            <span>
-
-                © 2025 -
-                Dr. Sanjeev Pal Yadav.
-                All Rights Reserved.
-
-            </span>
-
-
-            <div>
-
-                <a href="#about">
-                    About Us
-                </a>
-
-                <a href="#services">
-                    Services
-                </a>
-
-                <a href="#contact">
-                    Contact Us
-                </a>
-
-            </div>
-
-        </div>
-
-    </footer>
-
-
-
-    <!-- Mobile Navigation -->
-
-    <div class="mobile-panel"
-         id="mobilePanel">
-
-        <button id="closeMenu">
-            ×
-        </button>
-
-        <a href="#about">
-            About Us
-        </a>
-
-        <a href="#services">
-            Services
-        </a>
-
-        <a href="#reviews">
-            Review
-        </a>
-
-        <a href="#career">
-            Career
-        </a>
-
-        <a href="#contact">
-            Contact Us
-        </a>
-
     </div>
 
 
-
-    <!-- Main JavaScript -->
-
-    <script src="script.js"></script>
+</div>
 
 
-    <!-- ================= BOOKING POPUP ================= -->
+
+<!-- =========================================================
+     FLOATING WHATSAPP
+     ========================================================= -->
+
+<div class="floating-actions">
+
+
+    <a href="https://wa.me/919716477008"
+       target="_blank"
+       rel="noopener noreferrer">
+
+        <span>
+            WhatsApp
+        </span>
+
+        <b>
+            ↗
+        </b>
+
+    </a>
+
+
+</div>
+
+
+
+<!-- =========================================================
+     JAVASCRIPT
+     ========================================================= -->
+
+<script src="script.js"></script>
+
+
+<script>
+
+
+/* =========================================================
+   BOOKING POPUP
+   ========================================================= */
+
+const bookingOverlay =
+    document.getElementById("bookingOverlay");
+
+
+const openBooking =
+    document.getElementById("openBooking");
+
+
+const closeBooking =
+    document.getElementById("closeBooking");
+
+
+const appointmentForm =
+    document.getElementById("appointmentForm");
+
+
+
+function showBooking() {
+
+    if (!bookingOverlay) return;
+
+    bookingOverlay.classList.add("active");
+
+    bookingOverlay.setAttribute(
+        "aria-hidden",
+        "false"
+    );
+
+    document.body.classList.add(
+        "booking-open"
+    );
+
+}
+
+
+
+function hideBooking() {
+
+    if (!bookingOverlay) return;
+
+    bookingOverlay.classList.remove(
+        "active"
+    );
+
+    bookingOverlay.setAttribute(
+        "aria-hidden",
+        "true"
+    );
+
+    document.body.classList.remove(
+        "booking-open"
+    );
+
+}
+
+
+
+if (openBooking) {
+
+    openBooking.addEventListener(
+        "click",
+        showBooking
+    );
+
+}
+
+
+
+if (closeBooking) {
+
+    closeBooking.addEventListener(
+        "click",
+        hideBooking
+    );
+
+}
+
+
+
+/* ALL BOOKING BUTTONS */
+
+document.querySelectorAll(
+    "[data-open-booking]"
+).forEach(function(button) {
+
+    button.addEventListener(
+        "click",
+        function(event) {
+
+            event.preventDefault();
+
+            showBooking();
+
+        }
+    );
+
+});
+
+
+
+/* CLICK OUTSIDE */
+
+if (bookingOverlay) {
+
+    bookingOverlay.addEventListener(
+        "click",
+        function(event) {
+
+            if (
+                event.target ===
+                bookingOverlay
+            ) {
+
+                hideBooking();
+
+            }
+
+        }
+    );
+
+}
+
+
+
+/* ESCAPE */
+
+document.addEventListener(
+    "keydown",
+    function(event) {
+
+        if (
+            event.key === "Escape" &&
+            bookingOverlay &&
+            bookingOverlay.classList.contains(
+                "active"
+            )
+        ) {
+
+            hideBooking();
+
+        }
+
+    }
+);
+
+
+
+/* FORM */
+
+if (appointmentForm) {
+
+    appointmentForm.addEventListener(
+        "submit",
+        function(event) {
+
+            event.preventDefault();
+
+
+            const name =
+                appointmentForm
+                .querySelector(
+                    '[name="name"]'
+                ).value;
+
+
+            const phone =
+                appointmentForm
+                .querySelector(
+                    '[name="phone"]'
+                ).value;
+
+
+            const location =
+                appointmentForm
+                .querySelector(
+                    '[name="location"]'
+                ).value;
+
+
+            const date =
+                appointmentForm
+                .querySelector(
+                    '[name="date"]'
+                ).value;
+
+
+
+            const message =
+                "Hello Dr. Sanjeev Pal,%0A%0A" +
+                "I would like to book an appointment.%0A%0A" +
+                "Name: " + name +
+                "%0APhone: " + phone +
+                "%0AClinic: " + location +
+                "%0ADate: " + date;
+
+
+
+            window.open(
+                "https://wa.me/919716477008?text=" +
+                message,
+                "_blank"
+            );
+
+
+        }
+    );
+
+}
+
+
+
+/* =========================================================
+   MOBILE MENU
+   ========================================================= */
+
+const mobileMenuBtn =
+    document.getElementById(
+        "mobileMenuBtn"
+    );
+
+
+const mainNav =
+    document.getElementById(
+        "mainNav"
+    );
+
+
+
+if (
+    mobileMenuBtn &&
+    mainNav
+) {
+
+    mobileMenuBtn.addEventListener(
+        "click",
+        function() {
+
+            const isOpen =
+                mainNav.classList.toggle(
+                    "mobile-open"
+                );
+
+
+            mobileMenuBtn.setAttribute(
+                "aria-expanded",
+                isOpen
+            );
+
+        }
+    );
+
+
+    document.querySelectorAll(
+        ".nav-link"
+    ).forEach(function(link) {
+
+        link.addEventListener(
+            "click",
+            function() {
+
+                mainNav.classList.remove(
+                    "mobile-open"
+                );
+
+                mobileMenuBtn.setAttribute(
+                    "aria-expanded",
+                    "false"
+                );
+
+            }
+        );
+
+    });
+
+}
+
+
+
+/* =========================================================
+   HEADER SCROLL
+   ========================================================= */
+
+const header =
+    document.getElementById(
+        "header"
+    );
+
+
+
+window.addEventListener(
+    "scroll",
+    function() {
+
+        if (!header) return;
+
+
+        if (
+            window.scrollY > 40
+        ) {
+
+            header.classList.add(
+                "scrolled"
+            );
+
+        } else {
+
+            header.classList.remove(
+                "scrolled"
+            );
+
+        }
+
+    }
+);
+
+
+
+/* =========================================================
+   ACTIVE NAV
+   ========================================================= */
+
+const sections =
+    document.querySelectorAll(
+        "section[id]"
+    );
+
+
+const navLinks =
+    document.querySelectorAll(
+        ".nav-link"
+    );
+
+
+
+window.addEventListener(
+    "scroll",
+    function() {
+
+        let current = "";
+
+
+        sections.forEach(function(section) {
+
+            const sectionTop =
+                section.offsetTop - 180;
+
+
+            if (
+                window.scrollY >=
+                sectionTop
+            ) {
+
+                current =
+                    section.getAttribute(
+                        "id"
+                    );
+
+            }
+
+        });
+
+
+        navLinks.forEach(function(link) {
+
+            link.classList.remove(
+                "active"
+            );
+
+
+            if (
+                link.getAttribute(
+                    "href"
+                ) === "#" + current
+            ) {
+
+                link.classList.add(
+                    "active"
+                );
+
+            }
+
+        });
+
+    }
+);
+
+
+</script>
+
+
+<!-- ================= BOOKING POPUP ================= -->
 
 <div class="booking-overlay" id="bookingOverlay">
 
@@ -2566,91 +3038,245 @@
 
 <script>
 
-const openBooking =
-    document.getElementById("openBooking");
+/* =========================================
+   UNIVERSAL BOOK APPOINTMENT POPUP
+========================================= */
 
-const closeBooking =
-    document.getElementById("closeBooking");
+document.addEventListener("DOMContentLoaded", function () {
 
-const bookingOverlay =
-    document.getElementById("bookingOverlay");
+    const bookingOverlay =
+        document.getElementById("bookingOverlay");
 
+    const closeBooking =
+        document.getElementById("closeBooking");
 
-/* OPEN POPUP */
-
-openBooking.addEventListener("click", () => {
-
-    bookingOverlay.classList.add("active");
-
-    document.body.style.overflow = "hidden";
-
-});
+    const appointmentForm =
+        document.getElementById("appointmentForm");
 
 
-/* CLOSE POPUP */
+    /* =========================================
+       OPEN POPUP
+    ========================================= */
 
-closeBooking.addEventListener("click", closeBookingPopup);
+    function openBookingPopup(event) {
 
+        if (event) {
+            event.preventDefault();
+        }
 
-function closeBookingPopup() {
+        bookingOverlay.classList.add("active");
 
-    bookingOverlay.classList.remove("active");
-
-    document.body.style.overflow = "";
-
-}
-
-
-/* CLICK OUTSIDE */
-
-bookingOverlay.addEventListener("click", (e) => {
-
-    if (e.target === bookingOverlay) {
-
-        closeBookingPopup();
+        document.body.style.overflow = "hidden";
 
     }
 
-});
 
+    /* =========================================
+       CLOSE POPUP
+    ========================================= */
 
-/* ESC KEY */
+    function closeBookingPopup() {
 
-document.addEventListener("keydown", (e) => {
+        bookingOverlay.classList.remove("active");
 
-    if (
-        e.key === "Escape" &&
-        bookingOverlay.classList.contains("active")
-    ) {
-
-        closeBookingPopup();
+        document.body.style.overflow = "";
 
     }
 
-});
+
+    /* =========================================
+       UNIVERSAL CLICK DETECTION
+       
+       यह पूरे document में click देखेगा।
+       
+       इसलिए:
+       Header
+       Hero
+       Services
+       CTA
+       Footer
+       
+       सभी Book Appointment buttons
+       काम करेंगे।
+    ========================================= */
+
+    document.addEventListener(
+        "click",
+        function (event) {
+
+            const clickedElement =
+                event.target.closest(
+                    ".book-appointment-btn"
+                );
 
 
-/* FORM */
+            if (clickedElement) {
 
-document
-    .getElementById("appointmentForm")
-    .addEventListener("submit", function(e) {
+                openBookingPopup(event);
 
-        e.preventDefault();
+                return;
 
-        alert(
-            "Thank you! Your appointment request has been received."
+            }
+
+        }
+    );
+
+
+    /* =========================================
+       ALSO DETECT BUTTON/LINK BY TEXT
+       
+       अगर किसी Book Appointment button में
+       book-appointment-btn class नहीं है,
+       तब भी यह popup खोलेगा।
+    ========================================= */
+
+    document.addEventListener(
+        "click",
+        function (event) {
+
+            const element =
+                event.target.closest(
+                    "a, button"
+                );
+
+
+            if (!element) {
+                return;
+            }
+
+
+            /*
+             Form के अंदर वाला submit button
+             यहाँ ignore होगा।
+            */
+
+            if (
+                element.closest(
+                    "#appointmentForm"
+                )
+            ) {
+
+                return;
+
+            }
+
+
+            const buttonText =
+                element.textContent
+                    .replace(/\s+/g, " ")
+                    .trim()
+                    .toLowerCase();
+
+
+            if (
+                buttonText === "book appointment" ||
+                buttonText.includes("book appointment")
+            ) {
+
+                openBookingPopup(event);
+
+            }
+
+        }
+    );
+
+
+    /* =========================================
+       CLOSE BUTTON
+    ========================================= */
+
+    if (closeBooking) {
+
+        closeBooking.addEventListener(
+            "click",
+            function (event) {
+
+                event.preventDefault();
+
+                closeBookingPopup();
+
+            }
         );
 
-        this.reset();
+    }
 
-        closeBookingPopup();
 
-    });
+    /* =========================================
+       CLICK OUTSIDE
+    ========================================= */
+
+    if (bookingOverlay) {
+
+        bookingOverlay.addEventListener(
+            "click",
+            function (event) {
+
+                if (
+                    event.target === bookingOverlay
+                ) {
+
+                    closeBookingPopup();
+
+                }
+
+            }
+        );
+
+    }
+
+
+    /* =========================================
+       ESC KEY
+    ========================================= */
+
+    document.addEventListener(
+        "keydown",
+        function (event) {
+
+            if (
+                event.key === "Escape" &&
+                bookingOverlay.classList.contains("active")
+            ) {
+
+                closeBookingPopup();
+
+            }
+
+        }
+    );
+
+
+    /* =========================================
+       FORM SUBMIT
+    ========================================= */
+
+    if (appointmentForm) {
+
+        appointmentForm.addEventListener(
+            "submit",
+            function (event) {
+
+                event.preventDefault();
+
+
+                alert(
+                    "Thank you! Your appointment request has been received."
+                );
+
+
+                appointmentForm.reset();
+
+                closeBookingPopup();
+
+            }
+        );
+
+    }
+
+});
 
 </script>
 
-
 </body>
-</html>
 
+</html>
