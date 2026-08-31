@@ -963,3 +963,260 @@ document.querySelectorAll(".nav-link").forEach(link => {
     });
 
 });
+
+
+/* ==========================================
+   BOOK APPOINTMENT POPUP
+   Works with ALL booking buttons
+   ========================================== */
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const bookingModal = document.querySelector(".booking-modal");
+    const closeBooking = document.getElementById("closeBooking");
+    const appointmentForm = document.getElementById("appointmentForm");
+
+    /*
+    ------------------------------------------
+    FIND ALL BOOK APPOINTMENT BUTTONS
+    ------------------------------------------
+    */
+
+    const bookingButtons = document.querySelectorAll(
+        ".book-appointment-btn"
+    );
+
+
+    /*
+    ------------------------------------------
+    OPEN BOOKING POPUP
+    ------------------------------------------
+    */
+
+    function openBookingModal(event) {
+
+        if (event) {
+            event.preventDefault();
+        }
+
+        if (!bookingModal) return;
+
+        bookingModal.classList.add("active");
+
+        document.body.classList.add("booking-open");
+
+        /*
+        Prevent background page scrolling
+        */
+        document.body.style.overflow = "hidden";
+    }
+
+
+    /*
+    ------------------------------------------
+    CLOSE BOOKING POPUP
+    ------------------------------------------
+    */
+
+    function closeBookingModal() {
+
+        if (!bookingModal) return;
+
+        bookingModal.classList.remove("active");
+
+        document.body.classList.remove("booking-open");
+
+        /*
+        Restore page scrolling
+        */
+        document.body.style.overflow = "";
+    }
+
+
+    /*
+    ------------------------------------------
+    CONNECT ALL BOOKING BUTTONS
+    ------------------------------------------
+    */
+
+    bookingButtons.forEach(function (button) {
+
+        button.addEventListener("click", function (event) {
+
+            openBookingModal(event);
+
+        });
+
+    });
+
+
+    /*
+    ------------------------------------------
+    CLOSE BUTTON
+    ------------------------------------------
+    */
+
+    if (closeBooking) {
+
+        closeBooking.addEventListener("click", function () {
+
+            closeBookingModal();
+
+        });
+
+    }
+
+
+    /*
+    ------------------------------------------
+    CLICK OUTSIDE POPUP TO CLOSE
+    ------------------------------------------
+    */
+
+    if (bookingModal) {
+
+        bookingModal.addEventListener("click", function (event) {
+
+            if (event.target === bookingModal) {
+
+                closeBookingModal();
+
+            }
+
+        });
+
+    }
+
+
+    /*
+    ------------------------------------------
+    ESC KEY TO CLOSE
+    ------------------------------------------
+    */
+
+    document.addEventListener("keydown", function (event) {
+
+        if (event.key === "Escape") {
+
+            closeBookingModal();
+
+        }
+
+    });
+
+
+    /*
+    ------------------------------------------
+    APPOINTMENT FORM
+    ------------------------------------------
+    */
+
+    if (appointmentForm) {
+
+        appointmentForm.addEventListener("submit", function (event) {
+
+            event.preventDefault();
+
+
+            const name =
+                appointmentForm.querySelector(
+                    '[name="name"]'
+                )?.value.trim();
+
+
+            const phone =
+                appointmentForm.querySelector(
+                    '[name="phone"]'
+                )?.value.trim();
+
+
+            const clinic =
+                appointmentForm.querySelector(
+                    '[name="clinic"]'
+                )?.value;
+
+
+            const date =
+                appointmentForm.querySelector(
+                    '[name="date"]'
+                )?.value;
+
+
+            /*
+            Basic validation
+            */
+
+            if (!name || !phone || !clinic) {
+
+                alert(
+                    "Please fill all required fields."
+                );
+
+                return;
+
+            }
+
+
+            /*
+            ----------------------------------
+            WHATSAPP MESSAGE
+            ----------------------------------
+            */
+
+            const message =
+                `Hello Dr. Sanjeev,%0A%0A` +
+                `I would like to book a physiotherapy appointment.%0A%0A` +
+                `Name: ${encodeURIComponent(name)}%0A` +
+                `Phone: ${encodeURIComponent(phone)}%0A` +
+                `Clinic: ${encodeURIComponent(clinic)}%0A` +
+                `Preferred Date: ${encodeURIComponent(date || "Not specified")}`;
+
+
+            /*
+            ----------------------------------
+            WHATSAPP NUMBER
+            ----------------------------------
+
+            IMPORTANT:
+            Replace this number with your
+            actual WhatsApp number.
+
+            Country code included.
+            Example: 919876543210
+            */
+
+            const whatsappNumber = "919XXXXXXXXX";
+
+
+            const whatsappURL =
+                `https://wa.me/${whatsappNumber}?text=${message}`;
+
+
+            /*
+            Open WhatsApp
+            */
+
+            window.open(
+                whatsappURL,
+                "_blank"
+            );
+
+
+            /*
+            Close popup
+            */
+
+            closeBookingModal();
+
+
+            /*
+            Reset form
+            */
+
+            appointmentForm.reset();
+
+        });
+
+    }
+
+});
