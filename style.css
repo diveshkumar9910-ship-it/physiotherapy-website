@@ -4818,72 +4818,6 @@ footer {
 
     }
 
-
-    /* =====================================
-       WHATSAPP FLOATING BUTTON
-    ===================================== */
-
-    .mobile-whatsapp {
-
-        position: fixed;
-
-        right: 18px;
-
-        bottom: 92px;
-
-        width: 62px;
-        height: 62px;
-
-        display: flex;
-
-        align-items: center;
-        justify-content: center;
-
-        border-radius: 50%;
-
-        background: #20b966;
-
-        color: #ffffff;
-
-        text-decoration: none;
-
-        box-shadow:
-            0 12px 30px
-            rgba(32, 185, 102, .28);
-
-        z-index: 9995;
-
-        transition:
-            transform .25s ease,
-            box-shadow .25s ease;
-
-        animation:
-            whatsappPulse 2.8s infinite;
-
-    }
-
-
-    .mobile-whatsapp svg {
-
-        width: 32px;
-        height: 32px;
-
-    }
-
-
-    .mobile-whatsapp:hover {
-
-        transform:
-            translateY(-3px)
-            scale(1.04);
-
-        box-shadow:
-            0 16px 35px
-            rgba(32, 185, 102, .35);
-
-    }
-
-
     /* =====================================
        WHATSAPP PULSE
     ===================================== */
@@ -4984,6 +4918,125 @@ footer {
     body {
 
         padding-bottom: 68px;
+
+    }
+
+}
+
+
+/* =========================================
+   MOBILE WHATSAPP FLOATING BUTTON
+========================================= */
+
+.mobile-whatsapp {
+
+    display: none;
+
+}
+
+
+/* =========================================
+   ONLY MOBILE
+========================================= */
+
+@media (max-width: 768px) {
+
+    .mobile-whatsapp {
+
+        position: fixed;
+
+        display: flex;
+
+        align-items: center;
+        justify-content: center;
+
+        width: 62px;
+        height: 62px;
+
+        right: 18px;
+
+        /* Bottom navigation ke upar */
+        bottom: 88px;
+
+        border-radius: 50%;
+
+        background: #20b968;
+
+        color: #ffffff;
+
+        text-decoration: none;
+
+        z-index: 9995;
+
+        box-shadow:
+            0 10px 28px rgba(20, 100, 70, .25);
+
+        transition:
+            transform .25s ease,
+            box-shadow .25s ease;
+
+    }
+
+
+    /* WhatsApp icon */
+
+    .mobile-whatsapp svg {
+
+        width: 32px;
+        height: 32px;
+
+        display: block;
+
+        flex-shrink: 0;
+
+    }
+
+
+    /* Hover */
+
+    .mobile-whatsapp:hover {
+
+        transform: translateY(-3px);
+
+        box-shadow:
+            0 14px 32px rgba(20, 100, 70, .32);
+
+    }
+
+
+    /* Tap */
+
+    .mobile-whatsapp:active {
+
+        transform: scale(.92);
+
+    }
+
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 380px) {
+
+    .mobile-whatsapp {
+
+        width: 56px;
+        height: 56px;
+
+        right: 14px;
+
+        bottom: 80px;
+
+    }
+
+
+    .mobile-whatsapp svg {
+
+        width: 29px;
+        height: 29px;
 
     }
 
