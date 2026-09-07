@@ -1220,3 +1220,40 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
 });
+
+document.addEventListener(
+    "DOMContentLoaded",
+    function () {
+
+        const mobileNavItems =
+            document.querySelectorAll(
+                ".mobile-nav-item"
+            );
+
+
+        mobileNavItems.forEach(function (item) {
+
+            item.addEventListener(
+                "click",
+                function () {
+
+                    mobileNavItems.forEach(
+                        function (nav) {
+
+                            nav.classList.remove(
+                                "active"
+                            );
+
+                        }
+                    );
+
+
+                    this.classList.add("active");
+
+                }
+            );
+
+        });
+
+    }
+);
