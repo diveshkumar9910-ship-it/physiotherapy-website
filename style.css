@@ -4595,3 +4595,396 @@ footer {
     }
 
 }
+
+/* =========================================
+   MOBILE BOTTOM NAVIGATION
+   ========================================= */
+
+.mobile-bottom-nav {
+
+    display: none;
+
+}
+
+
+/* =========================================
+   MOBILE ONLY
+   ========================================= */
+
+@media (max-width: 768px) {
+
+    .mobile-bottom-nav {
+
+        position: fixed;
+
+        left: 0;
+        right: 0;
+        bottom: 0;
+
+        height: 74px;
+
+        display: flex;
+
+        align-items: stretch;
+
+        justify-content: space-around;
+
+        background: rgba(255, 255, 255, 0.96);
+
+        backdrop-filter: blur(18px);
+        -webkit-backdrop-filter: blur(18px);
+
+        border-top:
+            1px solid rgba(30, 70, 80, 0.12);
+
+        box-shadow:
+            0 -8px 30px rgba(20, 50, 60, 0.10);
+
+        z-index: 9990;
+
+        padding:
+            5px 4px
+            env(safe-area-inset-bottom);
+
+    }
+
+
+    /* =====================================
+       NAV ITEM
+    ===================================== */
+
+    .mobile-nav-item {
+
+        flex: 1;
+
+        min-width: 0;
+
+        display: flex;
+
+        flex-direction: column;
+
+        align-items: center;
+
+        justify-content: center;
+
+        gap: 4px;
+
+        text-decoration: none;
+
+        color: #708089;
+
+        position: relative;
+
+        transition:
+            color .25s ease,
+            transform .25s ease;
+
+        -webkit-tap-highlight-color:
+            transparent;
+
+    }
+
+
+    /* =====================================
+       ICON
+    ===================================== */
+
+    .mobile-nav-icon {
+
+        width: 25px;
+        height: 25px;
+
+        display: flex;
+
+        align-items: center;
+        justify-content: center;
+
+        transition:
+            transform .25s ease;
+
+    }
+
+
+    .mobile-nav-icon svg {
+
+        width: 25px;
+        height: 25px;
+
+        display: block;
+
+    }
+
+
+    /* =====================================
+       TEXT
+    ===================================== */
+
+    .mobile-nav-text {
+
+        font-size: 12px;
+
+        line-height: 1;
+
+        font-weight: 600;
+
+        letter-spacing: -.1px;
+
+        white-space: nowrap;
+
+    }
+
+
+    /* =====================================
+       ACTIVE
+    ===================================== */
+
+    .mobile-nav-item.active {
+
+        color: #277e5b;
+
+    }
+
+
+    .mobile-nav-item.active
+    .mobile-nav-icon {
+
+        transform:
+            translateY(-1px);
+
+    }
+
+
+    /* =====================================
+       ACTIVE TOP INDICATOR
+    ===================================== */
+
+    .mobile-nav-item.active::before {
+
+        content: "";
+
+        position: absolute;
+
+        top: -5px;
+
+        left: 50%;
+
+        width: 28px;
+        height: 3px;
+
+        transform:
+            translateX(-50%);
+
+        border-radius: 10px;
+
+        background: #277e5b;
+
+    }
+
+
+    /* =====================================
+       TAP / HOVER
+    ===================================== */
+
+    .mobile-nav-item:hover {
+
+        color: #277e5b;
+
+    }
+
+
+    .mobile-nav-item:active {
+
+        transform:
+            scale(.94);
+
+    }
+
+
+    /* =====================================
+       BOOK / CONTACT
+    ===================================== */
+
+    .mobile-book-btn {
+
+        color: #238657;
+
+    }
+
+
+    .mobile-book-btn
+    .mobile-nav-icon {
+
+        color: #238657;
+
+    }
+
+
+    /* =====================================
+       WHATSAPP FLOATING BUTTON
+    ===================================== */
+
+    .mobile-whatsapp {
+
+        position: fixed;
+
+        right: 18px;
+
+        bottom: 92px;
+
+        width: 62px;
+        height: 62px;
+
+        display: flex;
+
+        align-items: center;
+        justify-content: center;
+
+        border-radius: 50%;
+
+        background: #20b966;
+
+        color: #ffffff;
+
+        text-decoration: none;
+
+        box-shadow:
+            0 12px 30px
+            rgba(32, 185, 102, .28);
+
+        z-index: 9995;
+
+        transition:
+            transform .25s ease,
+            box-shadow .25s ease;
+
+        animation:
+            whatsappPulse 2.8s infinite;
+
+    }
+
+
+    .mobile-whatsapp svg {
+
+        width: 32px;
+        height: 32px;
+
+    }
+
+
+    .mobile-whatsapp:hover {
+
+        transform:
+            translateY(-3px)
+            scale(1.04);
+
+        box-shadow:
+            0 16px 35px
+            rgba(32, 185, 102, .35);
+
+    }
+
+
+    /* =====================================
+       WHATSAPP PULSE
+    ===================================== */
+
+    @keyframes whatsappPulse {
+
+        0% {
+
+            box-shadow:
+                0 12px 30px
+                rgba(32,185,102,.28);
+
+        }
+
+        50% {
+
+            box-shadow:
+                0 12px 30px
+                rgba(32,185,102,.28),
+                0 0 0 9px
+                rgba(32,185,102,.08);
+
+        }
+
+        100% {
+
+            box-shadow:
+                0 12px 30px
+                rgba(32,185,102,.28);
+
+        }
+
+    }
+
+
+    /* =====================================
+       GIVE PAGE SPACE FOR BOTTOM NAV
+    ===================================== */
+
+    body {
+
+        padding-bottom: 74px;
+
+    }
+
+}
+
+
+/* =========================================
+   SMALL PHONES
+========================================= */
+
+@media (max-width: 380px) {
+
+    .mobile-bottom-nav {
+
+        height: 68px;
+
+    }
+
+
+    .mobile-nav-icon,
+    .mobile-nav-icon svg {
+
+        width: 22px;
+        height: 22px;
+
+    }
+
+
+    .mobile-nav-text {
+
+        font-size: 10px;
+
+    }
+
+
+    .mobile-whatsapp {
+
+        width: 56px;
+        height: 56px;
+
+        right: 14px;
+
+        bottom: 82px;
+
+    }
+
+
+    .mobile-whatsapp svg {
+
+        width: 29px;
+        height: 29px;
+
+    }
+
+
+    body {
+
+        padding-bottom: 68px;
+
+    }
+
+}
