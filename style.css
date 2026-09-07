@@ -4988,29 +4988,3 @@ footer {
     }
 
 }
-
-/* =========================================
-   NETLIFY BADGE - RIGHT MIDDLE
-========================================= */
-
-[data-netlify] {
-    /* keep normal */
-}
-
-/* Netlify badge */
-#netlify-badge,
-.netlify-badge,
-a[href*="netlify.com"] {
-    position: fixed !important;
-
-    right: 12px !important;
-    left: auto !important;
-
-    top: 50% !important;
-    bottom: auto !important;
-
-    transform: translateY(-50%) !important;
-
-    z-index: 99999 !important;
-}
-
