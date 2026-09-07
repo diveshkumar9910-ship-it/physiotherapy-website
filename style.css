@@ -4981,16 +4981,11 @@ footer {
     /* WhatsApp icon */
 
     .mobile-whatsapp svg {
-
-        width: 32px;
-        height: 32px;
-
-        display: block;
-
-        flex-shrink: 0;
-
-    }
-
+    width: 32px;
+    height: 32px;
+    display: block;
+    flex-shrink: 0;
+}
 
     /* Hover */
 
